@@ -1,6 +1,33 @@
+  /* Hide the scrollbar */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+/* For Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: none;
+}
+  
+/* ---------- NavBar Css----------- */
+
+.navbar{
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05);
+    /* background-color: #248B97; */
+}
 .Home-nav1{
     gap: 15px;
-    margin-left: 150px;
+    margin-left: 100px;
     font-weight: 400;
 
 }
@@ -25,9 +52,6 @@
 .text_dropdown::after {
     color: green !important;
 }
-.navbar{
-    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05);
-}
 
 
 @media (min-width: 320px) and (max-width: 990px) {
@@ -45,3 +69,334 @@
         margin-right: 100px;
     }
   }
+
+
+  /* ---------- NavBar Css----------- */
+
+  /* ---------- Section 1----------- */
+
+  .section-1{
+    margin-top: 100px;
+   width: 1192px;
+   height: 539px;
+   margin-left: 60px;
+    /* background-color: #23899C; */
+}
+.section1-col1{
+    width: 558px;
+    
+}
+.section1-col2{
+    width: 558px;
+}
+.section1-btn1{
+    width: 214px;
+    height: 42px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 500;
+    background: linear-gradient(90deg, #248B97 0%, #2CA068 100%);
+    border: none;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+
+
+}
+
+
+/*-------- Section - 1 --------*/
+
+/* ----------Section - 2 --------- */
+
+.section-2{
+    width: 1192px;
+    /* height: 539px; */
+    margin-left: 40px;
+}
+
+.section2-col1{
+
+    width: 588px;
+    height: 418px;
+    left: 604px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.section2-col2{
+    width: 588px;
+    height: 418px;
+    left: 604px;
+    gap: 0px;
+    opacity: 0px;
+}
+.section2-btn1{
+    width: 211px;
+    height: 42px;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    background: linear-gradient(90deg, #248B97 0%, #23899C 10.5%, #2CA068 86%, #2CA068 100%);
+    font-weight: 500;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.section2-part1{
+    margin-top: 100px;
+    
+}
+
+.section2-part1-heading3{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* ---section - 2 About us--- */
+
+/* ----Section -3 our Services--- */
+
+.section-3{
+    width: 100%;
+    margin-top: 100px;
+    width: 1192px;
+    /* height: 539px; */
+    margin-left: 40px;
+}
+
+
+.section3-icon {
+    display: inline-block;
+    justify-content: space-around;
+    width: 390px;
+}
+
+.sec3-icon-svg {
+    position: relative; /* Make the container relative */
+    width: 44px;
+    height: 44px;
+    background-color: #E9E9E9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.sec3-icon-svg i {
+    font-size: 20px;
+    color: white;
+}
+
+.sec3-icon-svg label {
+    position: absolute; /* Position the label absolutely */
+    bottom: 10px; /* Adjust as needed to position the label */
+    margin-left: 400px; /* Center the label horizontally */
+    transform: translateX(-50%); /* Center the label horizontally */
+    white-space: nowrap; /* Prevent label from wrapping */
+}
+
+
+.sec3-icon-svg label:hover{
+    color: black;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 600;
+    margin-right: -100px;
+}
+.sec3-icon-svg i:hover{
+    color: #2CA068;
+    height: 22px;
+    width: 27px;
+    cursor: pointer;
+}
+.sec3-icon-svg:hover{
+    background: linear-gradient(90deg, #248B97 0%, #23899C 10.5%, #2CA068 86%, #2CA068 100%);
+    height: 54px;
+    width: 54px;
+    cursor: pointer;
+}
+
+.section3-part2 img{
+  margin-top: 60px;
+  margin-left: -200px;
+  z-index: -10;
+}
+
+.section3-part2 h2{
+    margin-top: -25px;
+    margin-left: -155px;
+}
+
+.section3-part3{
+    margin-left: -155px;
+}
+
+.sec3-part3-img{
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 770px;
+    z-index: -100;
+}
+
+
+.section3-btn1{
+    margin-top: 60px;
+    height: 43px;
+    width: 311px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    background: linear-gradient(93.27deg, #23899C -14.73%, #2CA068 104.65%);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+
+
+}
+.section3-btn1 i {
+    margin-left: 5px;
+}
+
+
+/* -----section 3 our services----- */
+
+/* ----Section - 4 - Industry Served */
+
+.section-4{
+    margin-top: 100px;
+    width: 1192px;
+    margin-left: 40px;
+    
+}
+
+.section4-part-1{
+   width: 95%;
+   margin-left: 40px;
+   height: 583px;
+   margin-top: 40px;
+
+
+}
+.sec4-part1-img-2 img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+
+
+.image-container {
+    position: relative;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: calc(100% - 252px); 
+    left: calc(50% - 140px); 
+    width: 250px;
+    text-align: center;
+    height: 252px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: #fff;
+    background: linear-gradient(127.31deg, rgba(44, 160, 104, 0.78) 7.19%, rgba(35, 137, 156, 0.78) 100%);
+    border-radius: 10px;
+}
+
+.image-container  .overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.image-container-2 {
+    position: relative;
+}
+
+.image-container-2 .overlay {
+    position: absolute;
+    top: calc(100% - 318px); 
+    left: calc(50% - 140px); 
+    width: 250px;
+    text-align: center;
+    height: 317px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: #fff;
+    background: linear-gradient(127.31deg, rgba(44, 160, 104, 0.78) 7.19%, rgba(35, 137, 156, 0.78) 100%);
+    border-radius: 10px;
+}
+
+.image-container-2  .overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.section4-btn1{
+
+    height: 42px;
+    width: 169px;
+    border-radius: 8px;
+    padding: 10px,8px,10px,18px;
+    gap: 10px;
+    background: linear-gradient(90deg, #23899C 6.25%, #2CA068 100%);
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.sec4-btn{
+    margin-top: 50px;
+    float: right;
+    margin-right: 55px;
+}
+
+
+/* ----Section - 4 - Industry Served */
+
+/* -----Section - 5 - Technologies Expertise----- */
+
+.section-5{
+    margin-top: 180px;
+    width: 1192px;
+    margin-left: 40px;
+}
+
+.section5-part-1 {
+    width: 80%;
+}
+
+.section5-part-1 .col p:hover{
+    text-decoration: underline #2CA068;
+    font-size: bold;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+.section5-skills p{
+ padding: 13px;
+}
+
+.section5-btn1{
+    margin-left: 39%;
+    margin-top: 30px;
+    height: 42px;
+    width: 189px;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    background: linear-gradient(93.27deg, #23899C -14.73%, #2CA068 104.65%);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* ----- Section - 5 Technologies Expertise ----- */
+
+/* -----Section -6 Our Portfolios-----  */
+
+.section-6{
+    margin-top: 70px;
+    width: 1192px;
+}
