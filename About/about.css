@@ -36,19 +36,21 @@
     opacity: 0px;
     background: rgba(36, 139, 151, 0.05);
     position: relative;
+    
 }
 
 .about_session2_text_div1 {
     width: 800px;
     height: 140px;
-    margin-left: 320px;
+    margin-left: 300px;
     margin-top: 98px;
     position: absolute;
+
 }
 
 .about_session2_text_para1 {
     color: black;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: ' Source Sans Pro';
     font-size: 56px;
     font-weight: 600;
     line-height: 70.39px;
@@ -71,7 +73,7 @@
 }
 
 .about_session2_text_para2 {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: ' Source Sans Pro';
     font-size: 22px;
     font-weight: 600;
     line-height: 27.65px;
@@ -81,11 +83,871 @@
 }
 
 /* for about page session2 completed============================================== */
-.about_session3_maindiv{
-height: 568px;
-top: 632px;
-left: 124px;
-padding: 24px 0px 46px 0px;
-/* background-color: rgb(183, 140, 140); */
+.about_session3_maindiv {
+    height: 100hv;
+    top: 632px;
+    left: 124px;
+    padding: 24px 0px 46px 0px;
+    margin-left: 10px;
+}
+
+.about_session3_row {
+    width: 100%;
+    margin-top: 24px;
 
 }
+
+.about_session3_col1 {
+    width: 588px;
+    height: 367px;
+    /* background-color: #92ecc1; */
+    margin-left: 30px;
+    margin-top: 0px;
+    padding-top: 40px;
+
+}
+
+.about_session3_p1 {
+    font-family: ' Source Sans Pro';
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 62.85px;
+    text-align: left;
+    margin-top: -175px;
+    margin-left: 60px;
+
+
+}
+
+.about_session3_p1_maindiv {
+    width: 588px;
+    height: 63px;
+    margin-top: 60px;
+    /* background-color: black; */
+
+}
+
+.about_session3_p2 {
+    margin-top: 123px;
+    margin-left: 60px;
+    font-family: ' Source Sans Pro';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25.14px;
+    text-align: left;
+
+}
+
+.about_session3_p3 {
+    margin-left: 60px;
+    font-family: ' Source Sans Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+
+}
+
+.about_session3_col2 {
+    padding-top: 40px;
+
+}
+
+/* <!-- About page session3 finished================================================================================================================================================ --> */
+.about_session4_maindiv {
+    /* width: 1192px; */
+    width: 100%;
+    height: 610px;
+    /* margin-top: 1308px; */
+    /* margin: 0px 0px 0px 90px; */
+    
+    max-width: 1192px; 
+    /* width: 100%; */
+    /* height: 633px; */
+    margin-top: 90px;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.about_session4_top_para {
+    font-family: ' Source Sans Pro';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60.34px;
+    text-align: left;
+
+}
+
+.about_session4_top_span {
+    font-family: ' Source Sans Pro';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60.34px;
+    text-align: left;
+    color: rgba(44, 160, 104, 1);
+    position: relative;
+
+}
+
+.about_session4_top_span::after {
+  content: ''; 
+  position: absolute; 
+  top: 50%; 
+  margin-left: 10px;
+  width: 50px; 
+  height: 4px;
+  border-radius: 8px;
+  background-color: #2CA068; 
+
+}
+
+.about_session4_image {
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 140px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.about_session4_col2{
+    padding-top: 100px;
+}
+.about_session4_col2_p1 {
+    font-family: ' Source Sans Pro';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30.17px;
+    text-align: left;
+
+}
+
+.about_session4_col2_p2 {
+    font-family: ' Source Sans Pro';
+    width: 550px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: rgba(103, 105, 104, 1);
+
+}
+
+.about_session4_col2_p3 {
+    font-family: ' Source Sans Pro';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30.17px;
+    text-align: left;
+
+}
+
+.about_session4_col2_p4 {
+    font-family: ' Source Sans Pro';
+    width: 550px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: rgba(103, 105, 104, 1);
+}
+
+/* <!-- About page session4 finished ================================================================================================================================================ --> */
+.about_session5_maindiv {
+    /* width: 1192px; */
+    width: 100%;
+    height: 633px;
+    margin-left: 90px;
+    /* background-color: aquamarine; */
+
+
+
+
+    max-width: 1192px; 
+    /* width: 100%; */
+    /* height: 633px; */
+    margin-top: 90px;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.about_session5_p1 {
+    font-family: ' Source Sans Pro';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60.34px;
+    text-align: left;
+    width: 490px;
+
+}
+
+.about_session5_span {
+    font-family: ' Source Sans Pro';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60.34px;
+    text-align: left;
+    color: rgba(44, 160, 104, 1);
+    position: relative;
+}
+.about_session5_span::after{
+    content: ''; 
+    position: absolute; 
+    top: 50%; 
+    margin-left: 160px;
+    width: 50px; 
+    height: 4px;
+    border-radius: 8px;
+    background-color: #2CA068; 
+}
+
+.about_session5_p2 {
+    font-family: ' Source Sans Pro';
+    font-size: 16px;
+    font-weight: 400;
+    width: 420px;
+    line-height: 20.11px;
+    text-align: left;
+    color: rgba(103, 105, 104, 1);
+
+}
+
+.about_session5_img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+}
+
+.about_session5_title {
+    font-family: ' Source Sans Pro';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.63px;
+    text-align: left;
+    margin-top: 8px;
+}
+
+.about_session5_para {
+    font-family: ' Source Sans Pro';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin-top: 8px;
+}
+
+/* <!-- About page session5 finished ================================================================================================================================================ --> */
+
+/* <!-- About page session6 ================================================================================================================================================ --> */
+.about_session6_maindiv {
+    /* width: 1192px; */
+    width: 100%;
+    height: 614px;
+    margin-top: 20px;
+    margin-left: 90px;
+    /* background-color: aquamarine; */
+
+
+
+    max-width: 1192px; 
+    /* width: 100%; */
+    /* height: 633px; */
+    margin-top: 90px;
+    margin-left: auto; 
+    margin-right: auto; 
+
+}
+
+.about_session6_para {
+    font-family: ' Source Sans Pro';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60.34px;
+    text-align: left;
+
+}
+
+.about_session6_span {
+    font-family: ' Source Sans Pro';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60.34px;
+    text-align: left;
+    color: rgba(44, 160, 104, 1);
+
+
+}
+
+.about_session6_card_img {
+    width: 42px;
+    height: 42px;
+    margin-top: 40px;
+    margin-left: 38px;
+
+
+}
+
+.session6_card_title {
+    margin-top: 26px;
+    margin-left: 38px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+
+}
+
+.session6_card_para {
+    font-family: ' Source Sans Pro';
+    font-size: 15px;
+    /* font-weight: 100; */
+    line-height: 24px;
+    text-align: left;
+    margin-left: 38px;
+}
+
+/* <!-- About page session6 finished ================================================================================================================================================ --> */
+
+
+/* <!-- About page session7 ================================================================================================================================================ --> */
+.about_session7_maindiv {
+    max-width: 1192px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .about_session7_background_div {
+    background: rgba(35, 137, 156, 0.05);
+    width: 100%;
+  }
+  
+  .about_session7_main_para {
+    font-family: 'Source Sans Pro';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60.34px;
+    text-align: left;
+    margin: 0;
+  }
+  
+  .about_session7_main_span {
+    color: rgba(44, 160, 104, 1);
+  }
+  
+  .about_session7_grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .about_session7_card {
+    width: 100%;
+  }
+  
+  .about_session7_img {
+    width: 44px;
+    height: 44px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .about_session7_title {
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25.14px;
+    text-align: left;
+  }
+  
+  .about_session7_text {
+    font-family: 'Source Sans Pro';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+  }
+  
+
+/* <!-- About page session7 finished ================================================================================================================================================ --> */
+/* <!-- About page session8 ================================================================================================================================================ --> */
+.about_session8_maindiv {
+    max-width: 1192px; 
+    width: 100%;
+    height: 633px;
+    margin-top: 90px;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.about_session8_col1{
+    /* background-color: darkgreen; */
+}
+.about_session8_para1 {
+    font-family: ' Source Sans Pro';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60.34px;
+   
+    /* margin-top: 50px; */
+    /* margin-left: -5px; */
+}
+
+.about_session8_span1 {
+    font-family: ' Source Sans Pro';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60.34px;
+    text-align: center;
+    margin-top: 50px;
+    color: rgba(44, 160, 104, 1);
+}
+
+.about_session8_para2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    width: 400px;
+    /* margin-left: 120px; */
+    margin-top: 50px;
+    /* margin-left: 90px; */
+
+}
+
+.about_session8_para3 {
+    font-family: ' Source Sans Pro';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+   
+    margin-top: 30px;
+    /* margin-left: 90px; */
+}
+
+.about_session8_button {
+    width: 161px;
+    height: 42px;
+    padding: 10px 20px 10px 20px;
+    gap: 8px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #23899C 13.04%, #2CA068 91.03%);
+    font-family: ' Source Sans Pro';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.63px;
+    text-align: left;
+    color: white;
+    border: none;
+    text-align: center;
+    /* margin-left: 120px; */
+    /* margin-left: 90px; */
+}
+
+.about_session8_image {
+    margin-left: 185px;
+    margin-top: 20px;
+}
+
+/* <!-- About page session8 finished ================================================================================================================================================ --> */
+/* <!-- About page session9 ================================================================================================================================================ --> */
+.about_session9_maindiv {
+    /* width: 1440px; */
+    height: 600px;
+    background-color: rgba(35, 137, 156, 0.05);
+    position: relative;
+    width: 100%;
+
+}
+
+.about_session9_title_div {
+    position: absolute;
+    margin-top: 64px;
+    margin-left: 124px;
+    gap: 12px;
+    opacity: 0px;
+    /* background-color: rgb(196, 113, 113); */
+    margin-left: 90px;
+}
+
+.about_session9_para1 {
+    font-family: ' Source Sans Pro';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60.34px;
+    text-align: left;
+}
+
+.about_session9_span {
+    font-family: ' Source Sans Pro';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60.34px;
+    text-align: left;
+    color: rgba(44, 160, 104, 1);
+
+
+}
+
+.about_session9_para_div {
+    /* width:  990px; */
+    margin-top: 28px;
+    margin-left: 8px;
+    font-family: ' Source Sans Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.11px;
+    text-align: left;
+width: 1192px;
+
+
+}
+
+.about_sessiion9_logo_div {
+    width: 1000px;
+    height: 180px;
+    top: 299px;
+    left: 124px;
+    gap: 68px;
+    /* background-color: rgb(222, 103, 103); */
+    margin-left: 50px;
+}
+
+/* .about_session9_logo_col1 {} */
+
+.about_session9_logo {
+    width: 145px;
+    height: 28px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.about_session9_button {
+    border: none;
+    margin-left: 540px;
+    background-color: transparent;
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.11px;
+    color: rgba(44, 160, 104, 1);
+    margin-top: 50px;
+
+}
+
+/* <!-- About page session9 finished ================================================================================================================================================ --> */
+/* <!-- About page session10 ================================================================================================================================================ --> */
+.about_session10_maindiv {
+    width: 100%;
+    height: 585px;
+
+
+}
+
+.about_session10_para1 {
+    font-family: 'Source Sans Pro';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60.34px;
+    text-align: left;
+    margin-left: 90px;
+    margin-top: 80px;
+
+}
+
+.about_session10_span {
+    font-family: 'Source Sans Pro';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60.34px;
+    color: rgba(44, 160, 104, 1);
+
+}
+
+.about_session10_para2 {
+    margin-left: 90px;
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.11px;
+    text-align: left;
+    color: rgba(103, 105, 104, 1);
+    margin-top: 20px;
+
+
+}
+
+.about_session10_image {
+    width: 360px;
+    height: 240px;
+    margin-left: 100px;
+    border-radius: 20px;
+    margin-top: 20px;
+
+}
+
+.about_session10_col {
+    margin-right: 60px !important;
+}
+
+.about_session10_image_p1 {
+    font-family: 'Source Sans Pro';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.6px;
+    /* text-align: center; */
+    margin-top: 10px;
+    margin-left: 100px;
+    background: rgba(225, 205, 251, 1);
+    border-radius: 20px;
+    width: 80px;
+    text-align: center;
+    padding: 1px;
+
+}
+.about_session10_row_main{
+    width: 100%;
+}
+
+.about_session10_image_p2 {
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25.14px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 360px;
+    height: 13px;
+}
+
+.about_session10_row {
+    width: 360px;
+    height: 26px;
+    margin-top: 20px !important;
+    margin-left: 100px !important;
+    /* background-color: aquamarine; */
+    /* margin-left: -1px !important; */
+}
+
+.about_session10_col_profile {
+    width: 26px;
+    height: 26px;
+    margin-left: -10px !important;
+
+
+}
+
+.about_session10_col_profile_name {
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.11px;
+    text-align: left;
+    width: 105px;
+    height: 11px;
+    color: rgba(112, 110, 114, 1);
+    padding-top: 3px;
+    margin-left: -85px;
+
+
+}
+
+.about_session10_col_profile_dob {
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.11px;
+    text-align: left;
+    color: rgba(112, 110, 114, 1);
+    padding-top: 3px;
+
+
+}
+
+.about_session10_button {
+    border: none;
+    background-color: transparent;
+    margin-left: 100px;
+    margin-top: 40px;
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.11px;
+    text-align: center;
+    color: rgba(103, 105, 104, 1);
+
+
+}
+.about_session10_image_dot{
+  margin-left: 1245px;
+  position: absolute;
+  margin-top: 80px;
+  height: 48px;
+  width: 52px;
+  z-index: -1;
+}
+/* <!-- About page session10 finished ================================================================================================================================================ --> */
+/* <!-- About page session11 ================================================================================================================================================ --> */
+.background-image {
+    margin: 0;
+    padding: 0;
+    background: url('./aboutImages/session11bg.png') no-repeat center center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 95px;
+    height: 100hv;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-head {
+    position: relative;
+    font-size: 48px;
+    margin-bottom: 100px;
+    font-weight: 700;
+    line-height: 60.34px;
+    text-align: left;
+    /* margin-top: -80px; */
+  }
+  
+  .form-touch {
+    color: #2CA068;
+  }
+  
+  .form-head::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-left: 10px;
+    width: 50px;
+    height: 4px;
+    border-radius: 8px;
+    background-color: #2CA068;
+  }
+  
+  .form-top {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .form-para {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #676968;
+  }
+  
+  .form-point {
+    font-size: 16px;
+    color: #676968;
+  }
+  
+  .formprofile {
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+  }
+  
+  .custom-list {
+    margin-bottom: 30px;
+  }
+  
+  .custom-list li::marker {
+    color: #2CA068;
+  }
+  
+  .custom-list li {
+    color: #676968;
+  }
+  
+  .profilename {
+    color: #000000;
+    font-weight: 500;
+    margin-top: 10px !important;
+    margin-bottom: -10px;
+    margin-left: -350px;
+  }
+  
+  .profiletext {
+    margin-top: -10px;
+    margin-left: -350px;
+    color: #676968;
+  }
+  
+  .profiletext2 {
+    /* margin-left: -150px; */
+    color: #676968;
+  }
+  
+  .dotimage {
+    margin-left: -30px;
+  }
+  
+  .circleimage {
+    position: absolute;
+    /* Ensure proper positioning */
+    z-index: -10;
+    /* Set z-index to position behind other elements */
+    padding-left: 390px;
+    margin-top: -50px;
+  }
+  
+  .form-container {
+    background-color: #ffffff;
+    padding-top: 20px !important;
+    width: 450px;
+    height: auto;
+    left: 10px;
+    gap: 0px;
+    border-radius: 8px;
+    opacity: 0px;
+    padding: 20px !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  label {
+    color: #676968;
+  }
+  
+  .form-text {
+    font-size: 24px;
+  }
+  
+  .form-line {
+    border-bottom: 3px solid #2CA068;
+    border-radius: 8px;
+    width: 90px;
+    margin-top: -5px;
+    margin-bottom: 30px;
+  }
+  
+  .form-star {
+    color: red;
+  }
+  
+  textarea {
+    border: #2CA068;
+    height: 150px;
+    /* resize: none; */
+    resize: none !important;
+  }
+  
+  .form-button {
+    background: linear-gradient(93.27deg, #23899c -14.73%, #2ca068 104.65%);
+    width: 414px;
+    height: 42px;
+    border-radius: 8px;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .arrowimage {
+    margin-left: -10px;
+  }
+ 
