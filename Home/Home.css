@@ -105,12 +105,26 @@ body {
 
 /*-------- Section - 1 --------*/
 
-/* ----------Section - 2 --------- */
+/* ----------Section - 2 About us --------- */
 
 .section-2{
     width: 1192px;
     /* height: 539px; */
     margin-left: 40px;
+}
+
+.sec2-about{
+    position: relative;
+}
+.sec2-about::after{
+    content: "";
+    position: absolute;
+    top: 51%;
+    margin-left: 15px;
+    width: 54px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #2CA068;
 }
 
 .section2-col1{
@@ -163,60 +177,84 @@ body {
     /* height: 539px; */
     margin-left: 40px;
 }
+.sec3-ourServices{
+    position: relative;
+}
+.sec3-ourServices::after{
+    content: "";
+    position: absolute;
+    top: 51%;
+    margin-left: 15px;
+    width: 54px;
+    height: 4px;
+    border-radius: 5px;
 
+}
 
-.section3-icon {
+.sec3-icon-wrapper {
     display: inline-block;
-    justify-content: space-around;
-    width: 390px;
+    position: relative;
 }
 
 .sec3-icon-svg {
-    position: relative; /* Make the container relative */
-    width: 44px;
-    height: 44px;
-    background-color: #E9E9E9;
+    position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 10px;
-    border-radius: 50%;
-    margin-bottom: 40px;
+    margin-left: 80px;
+    padding-top: 40px;
+    width: fit-content;
+    
 }
 
 .sec3-icon-svg i {
+    
     font-size: 20px;
-    color: white;
+    transition: background-color 0.3s ease, font-size 0.3s ease; 
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 50%; 
+    color: #ACACAC;
+    background: #E9E9E9;
+ 
 }
 
 .sec3-icon-svg label {
-    position: absolute; /* Position the label absolutely */
-    bottom: 10px; /* Adjust as needed to position the label */
-    margin-left: 400px; /* Center the label horizontally */
-    transform: translateX(-50%); /* Center the label horizontally */
-    white-space: nowrap; /* Prevent label from wrapping */
+    transition: font-weight 0.3s ease;
 }
 
+.sec3-icon-wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: transform 0.3s ease; 
+    z-index: -1; 
 
-.sec3-icon-svg label:hover{
-    color: black;
-    cursor: pointer;
-    font-size: larger;
-    font-weight: 600;
-    margin-right: -100px;
+    
 }
-.sec3-icon-svg i:hover{
-    color: #2CA068;
-    height: 22px;
-    width: 27px;
-    cursor: pointer;
+
+.sec3-icon-wrapper:hover::before {
+    transform: scale(1.1); 
+
+    
 }
-.sec3-icon-svg:hover{
+
+.sec3-icon-svg:hover i {
+    cursor: pointer;
+    color: #fff;
     background: linear-gradient(90deg, #248B97 0%, #23899C 10.5%, #2CA068 86%, #2CA068 100%);
-    height: 54px;
-    width: 54px;
+    font-size: 25px; 
+}
+
+.sec3-icon-svg:hover label {
     cursor: pointer;
+    font-weight: bold;
 }
 
 .section3-part2 img{
@@ -241,6 +279,9 @@ body {
     z-index: -100;
 }
 
+.section3-part3-icon li::marker{
+    color: #2CA068;
+}
 
 .section3-btn1{
     margin-top: 60px;
@@ -265,10 +306,24 @@ body {
 /* ----Section - 4 - Industry Served */
 
 .section-4{
-    margin-top: 100px;
+    margin-top: 150px;
     width: 1192px;
     margin-left: 40px;
     
+}
+
+.sec4-industry{
+    position: relative;
+}
+.sec4-industry::after{
+    content: "";
+    position: absolute;
+    top: 51%;
+    margin-left: 15px;
+    width: 54px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #2CA068;
 }
 
 .section4-part-1{
@@ -363,17 +418,57 @@ body {
     margin-left: 40px;
 }
 
-.section5-part-1 {
-    width: 80%;
+.sec5-tech{
+    position: relative;
+}
+.sec5-tech::after{
+    content: "";
+    position: absolute;
+    top: 51%;
+    margin-left: 15px;
+    width: 54px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #2CA068;
 }
 
+.section5-part-1 .col p{
+    position: relative;
+    padding-left: 10px !important;
+    cursor: pointer;
+}
+.section5-part-1 {
+    position: relative;
+    width: 80%;
+}
 .section5-part-1 .col p:hover{
+    position: absolute;
+    /* font-size: large; */
+    font-weight: 700;
+}
+
+.section5-part-1 .col p:hover::after{
+    position: absolute;
+    content: "";
+    cursor: pointer;
+    top: calc(95% - 2px); /* Position the underline vertically centered */
+    left: 10%; /* Align the underline with the left edge of the column */
+    width: 100%; /* Make the underline span the entire width of the column */
+    height: 4px;
+    border-radius: 5px;
+    background-color: #2CA068;
+    
+
+}
+
+/* .section5-part-1 .col p:hover{
+    position: absolute;
     text-decoration: underline #2CA068;
     font-size: bold;
     cursor: pointer;
     font-weight: bold;
     
-}
+} */
 
 .section5-skills p{
  padding: 13px;
@@ -399,4 +494,203 @@ body {
 .section-6{
     margin-top: 70px;
     width: 1192px;
+    margin-left: 50px;
+    
+}
+.section-6-head{
+    position: relative;
+}
+.section-6-head::after{
+    content: " ";
+    position: absolute;
+    top: 56%;
+    margin-left: 10px;
+    width: 50px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #2CA068;
+}
+.section-6-part1{
+    width: 936px;
+    height: 544px;
+    margin-left: 100px;
+    background: rgba(248, 248, 248, 1);
+    margin-top: 50px;
+    border-top-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+
+}
+.sec6-col1 h2{
+    position: relative;
+}
+.sec6-col1 h2::after{
+    content: "";
+    position: absolute;
+    /* top: 40%; */
+    margin-top: -5px;
+    width: 80px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #2CA068;
+}
+.section-6-part1 button{
+ color: #2CA068;
+ background-color: transparent;
+ border: none;
+ font-weight: 500;
+ font-size: large;
+}
+
+.sec6-col2 h2{
+    position: relative;
+}
+.sec6-col2 h2::after{
+    content: "";
+    position: absolute;
+    /* top: 40%; */
+    margin-top: -5px;
+    width: 40px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #2CA068;
+}
+.sec6-col1{
+padding: 4%;
+font-size: small;  
+}
+.sec6-col2{
+    padding: 4%;
+    font-size: small; 
+    margin-left: 30px;
+}
+
+.sec6-dot{
+    position: absolute;
+    margin-left: 79%;
+    margin-top: 5.8%;
+}
+.sec6-scribble{
+    position: absolute;
+    margin-left: 6%;
+    margin-top: -2.5%;
+}
+
+.section6-btn1{
+    margin-top: 70px;
+    margin-left: 39%;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    width: 189px;
+    height: 42px;
+    background: linear-gradient(93.27deg, #23899C -14.73%, #2CA068 104.65%);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+/* --- Section -6 Our PortFolio--- */
+
+/* --- Section - 7 Our Testimonials--- */
+
+.section-7{
+    width: 1192px;
+    margin-left: 40px;
+    margin-top: 7%;
+    position: relative;
+    
+}
+.sec7-halfDot{
+    z-index: -10;
+    position: absolute;
+    margin-top: 28px;
+    margin-left: 20%;
+}
+
+.sec7-leftarrow{
+    border: none;
+    height: 32px;
+    width: 32px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    border-radius: 50%;
+    padding-left: 3px;
+
+}
+.sec7-rightarrow{
+    border: none;
+    height: 32px;
+    width: 32px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    border-radius: 50%;
+    margin-left: 10px;
+    
+
+}
+.sec7-arrows {
+    display: flex; 
+    float: right;
+    margin-right:5%;
+}
+
+
+
+.sec7-head{
+}
+.section7-part1{
+    margin-top: 5% !important;
+    height: 370px;
+}
+.section7-col1{
+    background: #C1F0D9CC;
+    border-radius: 20px;
+    width: 457px !important;
+
+}
+.section7-col1 h1 {
+    margin-top: 30%;
+    margin-left: 15%;
+}
+
+.section7-col1 h2{
+    margin-left: 15%;
+}
+.section7-col2{
+    position: relative;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin-left: -5%;
+    width: 663px !important;
+    
+}
+
+.section-7-colen{
+    position: absolute;
+    margin-left: 6%;
+    margin-top: 2%;
+}
+.sec7-proect-manager{
+    margin-top: 60px !important;
+    margin-left: 5% !important;
+}
+
+.sec7-small-content{
+    margin-left: 5%;
+}
+
+.sec7-star{
+   margin-top: 5% !important;
+   margin-left: 20%;
+   
+}
+
+.sec-7-rotation{
+    z-index: -10 !important;
+    float: right;
+    margin-right: 18%;
+    margin-top: -1px;
+    clip-path: polygon(0 0%, 60% 0, 100% 100%, 10% 100%);
+    overflow: hidden;
+    rotate:  320deg;
+    
 }
