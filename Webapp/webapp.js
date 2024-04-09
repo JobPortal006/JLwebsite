@@ -57,3 +57,228 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// var cardImage = document.querySelector('.card_image');
+
+// // Add click event listener
+// cardImage.addEventListener('click', function() {
+//   // Rotate the image
+//   this.style.transform = 'rotate(180deg)';
+//   // Hide the background image
+  
+// });
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Get the card image element
+//     // var cardImage = document.querySelector('.card_image');
+//     // Get the content elements
+//     var contentPara = document.querySelector('.webapp_section_6_card1contentpara');
+//     var cardLine = document.querySelector('.cardline');
+//     var moreAboutAgile = document.querySelector('.webapp_section_6_moreaboutagile');
+//       // Get the card image and heading elements
+//   var cardImage = document.querySelector('.card_image');
+//   var cardHeading = document.querySelector('.card_heading');
+  
+//     // Add click event listener
+//     cardImage.addEventListener('click', function() {
+//       // Rotate the image
+//       this.style.transform = 'rotate(180deg)';
+//       this.style.backgroundColor  = 'green';
+//     // Change heading color to black
+//     cardHeading.style.color = 'black';
+//       var card = document.querySelector('.webapp_section_6_card1');
+//   card.style.backgroundImage = 'none';
+//   // Change background color to white
+//   card.style.backgroundColor = 'white';
+//       // Show the hidden content
+//       contentPara.style.opacity = '1';
+//       contentPara.style.visibility = 'visible';
+//       cardLine.style.opacity = '1';
+//       cardLine.style.visibility = 'visible';
+//       moreAboutAgile.style.opacity = '1';
+//       moreAboutAgile.style.visibility = 'visible';
+//       // Add box shadow
+//     var card = document.querySelector('.webapp_section_6_card1');
+//     card.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.5)';
+//     });
+//   })
+  
+
+//  document.addEventListener('DOMContentLoaded', function() {
+  // Get the card and image elements
+//   var card = document.querySelector('.webapp_section_6_card1 .webapp_section_6_card2  .webapp_section_6_card3');
+//   var cardImage = document.querySelector('.card_image');
+//   var cardHeading = document.querySelector('.card_heading');
+//   var contentPara = document.querySelector('.webapp_section_6_card1contentpara');
+//   var cardLine = document.querySelector('.cardline');
+//   var moreAboutAgile = document.querySelector('.webapp_section_6_moreaboutagile');
+
+//   // Set initial visibility state
+//   var isVisible = false;
+
+//   // Add click event listener to the image
+//   cardImage.addEventListener('click', function() {
+//     // Toggle visibility
+//     isVisible = !isVisible;
+
+//     // Rotate the image
+//     if (isVisible) {
+//       this.style.transform = 'rotate(180deg)';
+//     } else {
+//       this.style.transform = 'rotate(360deg)';
+//     }
+
+//     // Change image color to green when visible, otherwise revert to default
+//     if (isVisible) {
+//       this.style.backgroundColor = 'green';
+//     } else {
+//       this.style.backgroundColor = ''; // Revert to default background color
+//     }
+
+//     // Change heading color to black when visible, otherwise revert to default
+//     if (isVisible) {
+//       cardHeading.style.color = 'black';
+//     } else {
+//       cardHeading.style.color = ''; // Revert to default heading color
+//     }
+
+//     // Get the card element
+//     var card = document.querySelector('.webapp_section_6_card1');
+
+//     // Toggle background image and color
+//     if (isVisible) {
+//       card.style.backgroundImage = 'none';
+//       card.style.backgroundColor = 'white';
+//     } else {
+//       card.style.backgroundImage = ''; // Revert to default background image
+//       card.style.backgroundColor = ''; // Revert to default background color
+//     }
+
+//     // Toggle visibility of hidden elements
+//     if (isVisible) {
+//       contentPara.style.opacity = '1';
+//       contentPara.style.visibility = 'visible';
+//       cardLine.style.opacity = '1';
+//       cardLine.style.visibility = 'visible';
+//       moreAboutAgile.style.opacity = '1';
+//       moreAboutAgile.style.visibility = 'visible';
+//       // Add box shadow when visible
+//       card.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.5)';
+//     } else {
+//       contentPara.style.opacity = '0';
+//       contentPara.style.visibility = 'hidden';
+//       cardLine.style.opacity = '0';
+//       cardLine.style.visibility = 'hidden';
+//       moreAboutAgile.style.opacity = '0';
+//       moreAboutAgile.style.visibility = 'hidden';
+//       // Remove box shadow when hidden
+//       card.style.boxShadow = 'none';
+//     }
+//   });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to toggle visibility and style of elements
+    function toggleVisibility(card, cardImage, cardHeading, contentPara, cardLine, moreAboutAgile) {
+      // Toggle visibility
+      isVisible = !isVisible;
+  
+      // Rotate the image
+      if (isVisible) {
+        cardImage.style.transform = 'rotate(180deg)';
+      } else {
+        cardImage.style.transform = 'rotate(360deg)';
+      }
+  
+      // Change image color to green when visible, otherwise revert to default
+      if (isVisible) {
+        cardImage.style.backgroundColor = 'green';
+      } else {
+        cardImage.style.backgroundColor = '';
+      }
+  
+      // Change heading color to black when visible, otherwise revert to default
+      if (isVisible) {
+        cardHeading.style.color = 'black';
+      } else {
+        cardHeading.style.color = '';
+      }
+  
+      // Toggle background image and color of the card
+      if (isVisible) {
+        card.style.backgroundImage = 'none';
+        card.style.backgroundColor = 'white';
+      } else {
+        card.style.backgroundImage = '';
+        card.style.backgroundColor = '';
+      }
+  
+      // Toggle visibility of hidden elements
+      if (isVisible) {
+        contentPara.style.opacity = '1';
+        contentPara.style.visibility = 'visible';
+        cardLine.style.opacity = '1';
+        cardLine.style.visibility = 'visible';
+        moreAboutAgile.style.opacity = '1';
+        moreAboutAgile.style.visibility = 'visible';
+        // Add box shadow when visible
+        card.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.5)';
+      } else {
+        contentPara.style.opacity = '0';
+        contentPara.style.visibility = 'hidden';
+        cardLine.style.opacity = '0';
+        cardLine.style.visibility = 'hidden';
+        moreAboutAgile.style.opacity = '0';
+        moreAboutAgile.style.visibility = 'hidden';
+        // Remove box shadow when hidden
+        card.style.boxShadow = 'none';
+      }
+    }
+  
+    // Get elements for the first card
+    var card1 = document.querySelector('.webapp_section_6_card1');
+    var cardImage1 = document.querySelector('.webapp_section_6_card1 .card_image');
+    var cardHeading1 = document.querySelector('.webapp_section_6_card1 .card_heading');
+    var contentPara1 = document.querySelector('.webapp_section_6_card1contentpara');
+    var cardLine1 = document.querySelector('.webapp_section_6_card1 .cardline');
+    var moreAboutAgile1 = document.querySelector('.webapp_section_6_card1 .webapp_section_6_moreaboutagile');
+  
+    // Set initial visibility state for the first card
+    var isVisible = false;
+  
+    // Add click event listener to the image of the first card
+    cardImage1.addEventListener('click', function() {
+      toggleVisibility(card1, cardImage1, cardHeading1, contentPara1, cardLine1, moreAboutAgile1);
+    });
+  
+    // Get elements for the second card
+    var card2 = document.querySelector('.webapp_section_6_card2');
+    var cardImage2 = document.querySelector('.webapp_section_6_card2 .card_image');
+    var cardHeading2 = document.querySelector('.webapp_section_6_card2 .card_heading');
+    var contentPara2 = document.querySelector('.webapp_section_6_card2 .webapp_section_6_card1contentpara');
+    var cardLine2 = document.querySelector('.webapp_section_6_card2 .cardline');
+    var moreAboutAgile2 = document.querySelector('.webapp_section_6_card2 .webapp_section_6_moreaboutagile');
+  
+    // Set initial visibility state for the second card
+    isVisible = false;
+  
+    // Add click event listener to the image of the second card
+    cardImage2.addEventListener('click', function() {
+      toggleVisibility(card2, cardImage2, cardHeading2, contentPara2, cardLine2, moreAboutAgile2);
+    });
+
+    var card3 = document.querySelector('.webapp_section_6_card3');
+    var cardImage3 = document.querySelector('.webapp_section_6_card3 .card_image');
+    var cardHeading3 = document.querySelector('.webapp_section_6_card3 .card_heading');
+    var contentPara3 = document.querySelector('.webapp_section_6_card3 .webapp_section_6_card1contentpara');
+    var cardLine3 = document.querySelector('.webapp_section_6_card3 .cardline');
+    var moreAboutAgile3 = document.querySelector('.webapp_section_6_card3 .webapp_section_6_moreaboutagile');
+  
+    // Set initial visibility state for the third card
+    var isVisible = false;
+  
+    // Add click event listener to the image of the third card
+    cardImage3.addEventListener('click', function() {
+      toggleVisibility(card3, cardImage3, cardHeading3, contentPara3, cardLine3, moreAboutAgile3);
+    });
+  });
+  

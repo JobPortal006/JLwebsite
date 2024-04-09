@@ -3,187 +3,1046 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="Home Images\JL.png">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Sample</title>
+    <title>Home Page</title>
 </head>
 
 
-<!-- <style>
-  .sec3-icon-svg {
-      display: flex;
-      align-items: center;
-      margin-left: 80px;
-  }
 
-  .sec3-icon-svg i {
-   margin-top: 30px;
-      font-size: 24px;
-      transition: background-color 0.3s ease, font-size 0.3s ease; /* Added font-size transition */
-      margin-right: 5px;
-  }
+    <!-- Section - 0 -->
 
-  .sec3-icon-svg label {
-    margin-top: 30px;
-      transition: font-weight 0.3s ease;
-  }
+    <!-- <nav class="navbar navbar-expand-lg " style="height: 90px">
 
-  
-
-  .sec3-icon-svg:hover i {
-    
-      cursor: pointer;
-      background-color:#2CA068; /* Change to desired background color */
-      font-size: 30px; /* Increase font size when hovering */
-  }
-
-  .sec3-icon-svg:hover label {
-    cursor: pointer;
-      font-weight: bold;
-  }
-</style> -->
-
-<style>
-  .sec3-icon-wrapper {
-      display: inline-block;
-      position: relative;
-  }
-
-  .sec3-icon-svg {
-      display: flex;
-      align-items: center;
-      margin-left: 80px;
-  }
-
-  .sec3-icon-svg i {
-      font-size: 24px;
-      transition: background-color 0.3s ease, font-size 0.3s ease; /* Added background-color transition */
-      margin-right: 5px;
-      padding: 10px; /* Added padding to create space around the icon */
-      border-radius: 50%; /* Make the icon circular */
-  }
-
-  .sec3-icon-svg label {
-      transition: font-weight 0.3s ease;
-  }
-
-  .sec3-icon-wrapper::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-      height: 100%;
-      background-color: transparent;
-      border-radius: 50%;
-      transition: transform 0.3s ease; /* Added transform transition */
-      z-index: -1; /* Ensure the background stays behind the icon */
-  }
-
-  .sec3-icon-wrapper:hover::before {
-      transform: scale(1.2); /* Scale up the background */
-  }
-
-  .sec3-icon-svg:hover i {
-      cursor: pointer;
-      background-color: #2CA068; /* Change to desired background color */
-      font-size: 30px; /* Increase font size when hovering */
-  }
-
-  .sec3-icon-svg:hover label {
-      cursor: pointer;
-      font-weight: bold;
-  }
-</style>
-
-
-<body>
-   
-
-  <div class="row sec3-row1" style="width: 100%;">
-    <div  class=" col section3-icon">
-        <div class="sec3-icon-svg">
-            <i class="fas fa-image" ></i> <label>  Development </label>
-        </div>
-        <div class="sec3-icon-svg">
-            <i class="fas fa-mobile-alt"></i> <label> Web App Development </label>
-        </div>
-        <div class="sec3-icon-svg">
-            <i class="fas fa-cog"></i> <label> Web App Development </label>
-        </div>
-        <div class="sec3-icon-svg">
-            <i class="fas fa-headset"></i> <label> Web App Development </label>
-        </div>
-        <div class="sec3-icon-svg">
-            <i class="fas fa-flask"></i> <label> Web App Development </label>
-        </div>
-        <div class="sec3-icon-svg">
-            <i class="fas fa-window-maximize"></i> <label> Web App Development </label>
-        </div>
-        <div class="sec3-icon-svg">
-            <i class="fas fa-cloud"></i> <label> Web App Development </label>
-        </div>
-    </div>
-
-
-    <div class="col section3-part2">
-            <img src="Home Images/sec3-dot.png" alt="Dot" height="48px" width="52px" />
-            <h2>Web App Development <span style="color: #2CA068;">Services</span></h2>
-            <br/>
-        <div class="section3-part3">
-            <h4>Solidify your framework from front to back</h4>
-            <br/>
-            <p>Harness the full potential of the web with our custom web app development services, offering scalable 
-                solutions that meet your business's unique challenges and objectives.</p>
-            <br/>
-
-            <div class="row section3-part3-icon">
+      
+          <a class="navbar-brand home-nav-logo" href="#">
+            <img src="Home Images/Logo.png" alt="Logo" style="max-height: 40px; margin-left: 40px;">
+          </a>
+          <button class="navbar-toggler home-nav-btn1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          
+          <div class="collapse navbar-collapse home-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto Home-nav1">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text_dropdown" href="#" id="navbarDropdownAbout" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                        <a class="dropdown-item" href="#">JustLogix</a>
+                        <a class="dropdown-item" href="#">Skein Technologies</a>
+                        <a class="dropdown-item" href="#">Management</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Product</a>
+                    </div>
+                </li>
                 
-                <ul class="col" style="margin-left: 60px;">
-                    <li>Concept-to-deployment development</li>
-                    <li>Responsive design for all devices</li>
-                    <li>Cutting- edge web technologies</li>
-                </ul>
-                    
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text_dropdown" href="#" id="navbarDropdownServices" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownServices">
+                        <a class="dropdown-item" href="#">Service 1</a>
+                        <a class="dropdown-item" href="#">Service 2</a>
+                        <a class="dropdown-item" href="#">Service 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">More Services</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text_dropdown" href="#" id="navbarDropdownSolutions" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Solutions
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
+                        <a class="dropdown-item" href="#">Solution 1</a>
+                        <a class="dropdown-item" href="#">Solution 2</a>
+                        <a class="dropdown-item" href="#">Solution 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">More Solutions</a>
+                    </div>
+                </li>
 
-                <ul class="col">
-                    
-                    <li>Emphasis on security and performance</li>
-                    <li style="z-index: 10;position: relative;">Continuous updates and maintenance</li>
-                </ul>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text_dropdown" href="#" id="navbarDropdownIndustries" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Industries
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownIndustries">
+                        <a class="dropdown-item" href="#">Industry 1</a>
+                        <a class="dropdown-item" href="#">Industry 2</a>
+                        <a class="dropdown-item" href="#">Industry 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">More Industries</a>
+                    </div>
+                </li>
 
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text_dropdown" href="#" id="navbarDropdownTechnologies" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Technologies
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownTechnologies">
+                        <a class="dropdown-item" href="#">Technology 1</a>
+                        <a class="dropdown-item" href="#">Technology 2</a>
+                        <a class="dropdown-item" href="#">Technology 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">More Technologies</a>
+                    </div>
+                </li>
+
+               
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text_dropdown" href="#" id="navbarDropdownPortfolio" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Portfolio
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+                        <a class="dropdown-item" href="#">Portfolio Item 1</a>
+                        <a class="dropdown-item" href="#">Portfolio Item 2</a>
+                        <a class="dropdown-item" href="#">Portfolio Item 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">More Portfolio</a>
+                    </div>
+                </li>
+
+                
+                <li>
+                    <a><button type="button" class="nav-item-btn">Get in Touch</button></a>
+                </li>
+            </ul>
+        </div> 
+    </nav> -->
+
+ 
+    <!-- Section - 1 -->
+
+        <div class="container-fluid section-1">
+        <div class="row" style="width: 100%;">
+            <div class="col-12 col-sm-12 col-lg-6 section1-col1">
+                <h1 style="width: 450px; padding-bottom: 10px;">‘Empowering Your Business with Tailored IT Solutions’</h1>
+                <p>"Leverage cutting-edge technology and expert consultancy to drive your business forward in the digital age."</p>
+                <button type="button" class="section1-btn1">Discover Our Service</button>
+                <hr />
+
+                <div class="row sec1-row1">
+                    <div class="col-12 col-sm-12 col-lg-6">
+                        <h5>A+ Rating</h5>
+                        <p>Lorem ipsum dolor sit amet. Non commodialiquam Empowering Your Business with Tailored </p>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-lg-6">
+                        <h5>10+ Years experience</h5>
+                        <p>Lorem ipsum dolor sit amet. Non commodialiquam Empowering Your Business with Tailored </p>
+                    </div>
+
+                </div>
             </div>
-            <div class="sec3-part3-img" >
-                <img src="Home Images/sec3-ellipse-2.png" alt="Ellipse" height="94px" width="94px"/>
+            <div class="col-12 col-sm-12 col-lg-6 section1-col2">
+                <img src="Home Images/Home hero img - sec 1.png" alt="Sec 1" height="446px" width="517px"/>
             </div>
-            <button type="button" class="section3-btn1">Explore Web Development  <i class="fas fa-arrow-right"></i></button>
 
         </div>
     </div>
-</div>
 
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Section - 2 - About Us -->
 
-    </body>
-</html>
+    <div class="container-fluid section-2">
+        <div class="row">
+            <div class="col-12 col-lg-6  section2-col1">
+                <img src="Home Images/About Us- section2.png" alt="About us" height="426px" width="540px" />
+
+            </div>
+
+            <div class="col-12 col-lg-6  section2-col2">
+                <h1 class="sec2-about">About <span style="color: #2CA068;">Us</span><span></span></h1>
+                <br/>
+                <h2>Championing Innovation, Delivering Excellence</h2>
+                <br />
+                <p>At JustLogix, we believe in the transformative power of technology to elevate business standards. Our seasoned team of experts collaborates closely with clients to forge custom IT strategies that innovate, optimize, and drive growth. Committed to excellence, we ensure that with 
+                    our support, your business stays ahead of the curve.</p>
+                    <br />
+
+                <button type="button" class="section2-btn1">Discover Our Story</button>
+            </div>
+
+        </div>
+
+        <div class="section2-part1">
+            <h3 class="section2-part1-heading3">The number reflect our Reputation</h3>
+            <div class="row section2-part1-row0">
+                <div class="col sec2-project" style="margin-left: 120px;">
+                    <h5>2.4K</h5>
+                    <p>Project done</p>
+                </div>
+                <div class="col sec2-happy"  style="margin-left: 80px">
+                    <h5>200+</h5>
+                    <p>Happy Client</p>
+                </div>
+                <div class="col sec2-growth"  style="margin-left: 80px">
+                    <h5>50%</h5>
+                    <p>Growth over year</p>
+                </div>
+                <div class="col sec2-award"  style="margin-left: 80px">
+                    <h5>30+</h5>
+                    <p>Award winning</p>
+                </div>
 
 
-<div class="card" style="width: 466px;
-height: 210px;
-gap: 0px;
-border-radius: 8px 0px 0px 0px;
-opacity: 0px;
-background: rgba(251, 222, 255, 1);
-">
-  <div class="card-body">
-    <img src="./aboutImages/Vector.png" alt="Image" class="about_session6_card_img">
-    <h5 class="card-title session6_card_title" style="font-size:20px ;">120 + </h5>
-    <p class="card-text session6_card_para" >Admirable Reviews</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Section - 3 - Our Services -->
+   
+    <div class="container-fluid section-3">
+        <h1 class="sec3-ourServices">Our <span style="color: #2CA068;">Services</span></h1>
+        <br/>
+        <p>At JustLogix, we deliver innovative IT solutions tailored for modern business needs, from development to cloud integration, ensuring excellence at every step. Explore our expert services to transform your vision into reality</p>
+    
+        <div class="row sec3-row1">
+            <div class="col section3-icon">
+                <div class="sec3-icon-wrapper">
+                    <div class="sec3-icon-svg">
+                        <i class="fas fa-image"></i><label for="web-development">Web App Development</label>
+                    </div>
+                    <div class="sec3-icon-svg">
+                        <i class="fas fa-mobile-alt"></i> <label for="mobile-development">Mobile App Development</label>
+                    </div>
+                    <div class="sec3-icon-svg">
+                        <i class="fas fa-cog"></i> <label for="software-development">Software Development</label>
+                    </div>
+                    <div class="sec3-icon-svg">
+                        <i class="fas fa-headset"></i> <label for="support-maintenance">Support & Maintenance</label>
+                    </div>
+                    <div class="sec3-icon-svg">
+                        <i class="fas fa-flask"></i> <label for="qa-testing">QA Testing</label>
+                    </div>
+                    <div class="sec3-icon-svg">
+                        <i class="fas fa-window-maximize"></i> <label for="devops">DevOps</label>
+                    </div>
+                    <div class="sec3-icon-svg">
+                        <i class="fas fa-cloud"></i> <label for="cloud">Cloud</label>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col section3-part2" id="web-development">
+                <img src="Home Images/sec3-dot.png" alt="Dot" height="48px" width="52px"/>
+                <h2>Web App Development <span style="color: #2CA068;">Services</span></h2>
+                <br/>
+                <div class="section3-part3">
+                    <h4>Solidify your framework from front to back</h4>
+                    <br/>
+                    <p>Harness the full potential of the web with our custom web app development services, offering scalable solutions that meet your business's unique challenges and objectives.</p>
+                    <br/>
+    
+                    <div class="row section3-part3-icon">
+    
+                        <ul class="col" style="margin-left: 60px;">
+                            <li>Concept-to-deployment development</li>
+                            <li>Responsive design for all devices</li>
+                            <li>Cutting-edge web technologies</li>
+                        </ul>
+    
+    
+                        <ul class="col">
+    
+                            <li>Emphasis on security and performance</li>
+                            <li style="z-index: 10;position: relative;">Continuous updates and maintenance</li>
+                        </ul>
+    
+                    </div>
+                    <div class="sec3-part3-img">
+                        <img src="Home Images/sec3-ellipse-2.png" alt="Ellipse" height="94px" width="94px"/>
+                    </div>
+                    <button type="button" class="section3-btn1">Explore Web Development <i class="fas fa-arrow-right"></i></button>
+    
+                </div>
+            </div>
+    
+            <!-- Add other sections similar to the one above for remaining services -->
+            
+            <div class="col section3-part2" id="mobile-development">
+                <img src="Home Images/sec3-dot.png" alt="Dot" height="48px" width="52px"/>
+                <h2>Mobile App Development <span style="color: #2CA068;">Services</span></h2>
+                <br/>
+                <div class="section3-part3">
+                    <h4>Empowering your business on the go</h4>
+                    <br/>
+                    <p>Unlock the potential of mobile platforms with our custom mobile app development services. We specialize in creating intuitive, scalable, and high-performing mobile solutions tailored to your specific business needs.</p>
+                    <br/>
+    
+                    <div class="row section3-part3-icon">
+                        <ul class="col" style="margin-left: 60px;">
+                            <li>Native and cross-platform development</li>
+                            <li>User-centric design approach</li>
+                            <li>Integration with backend systems</li>
+                        </ul>
+                        <ul class="col">
+                            <li>Scalable architecture for future growth</li>
+                            <li>Thorough testing and quality assurance</li>
+                            <li>Post-launch support and updates</li>
+                        </ul>
+                    </div>
+                    <div class="sec3-part3-img">
+                        <img src="Home Images/sec3-ellipse-2.png" alt="Ellipse" height="94px" width="94px"/>
+                    </div>
+                    <button type="button" class="section3-btn1">Explore Mobile Development <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <!-- Add other sections similar to the one above for remaining services -->
+            
+            
+            <!-- Add other sections similar to the one above for remaining services -->
+            
+            <div class="col section3-part2" id="software-development">
+                <img src="Home Images/sec3-dot.png" alt="Dot" height="48px" width="52px"/>
+                <h2>Software Development <span style="color: #2CA068;">Services</span></h2>
+                <br/>
+                <div class="section3-part3">
+                    <h4>Empowering your business on the go</h4>
+                    <br/>
+                    <p>Unlock the potential of mobile platforms with our custom mobile app development services. We specialize in creating intuitive, scalable, and high-performing mobile solutions tailored to your specific business needs.</p>
+                    <br/>
+    
+                    <div class="row section3-part3-icon">
+                        <ul class="col" style="margin-left: 60px;">
+                            <li>Native and cross-platform development</li>
+                            <li>User-centric design approach</li>
+                            <li>Integration with backend systems</li>
+                        </ul>
+                        <ul class="col">
+                            <li>Scalable architecture for future growth</li>
+                            <li>Thorough testing and quality assurance</li>
+                            <li>Post-launch support and updates</li>
+                        </ul>
+                    </div>
+                    <div class="sec3-part3-img">
+                        <img src="Home Images/sec3-ellipse-2.png" alt="Ellipse" height="94px" width="94px"/>
+                    </div>
+                    <button type="button" class="section3-btn1">Explore Mobile Development <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <!-- Add other sections similar to the one above for remaining services -->
+            
+            <div class="col section3-part2" id="support-maintenance" >
+                <img src="Home Images/sec3-dot.png" alt="Dot" height="48px" width="52px"/>
+                <h2>Support and maintanance <span style="color: #2CA068;">Services</span></h2>
+                <br/>
+                <div class="section3-part3">
+                    <h4>Empowering your business on the go</h4>
+                    <br/>
+                    <p>Unlock the potential of mobile platforms with our custom mobile app development services. We specialize in creating intuitive, scalable, and high-performing mobile solutions tailored to your specific business needs.</p>
+                    <br/>
+    
+                    <div class="row section3-part3-icon">
+                        <ul class="col" style="margin-left: 60px;">
+                            <li>Native and cross-platform development</li>
+                            <li>User-centric design approach</li>
+                            <li>Integration with backend systems</li>
+                        </ul>
+                        <ul class="col">
+                            <li>Scalable architecture for future growth</li>
+                            <li>Thorough testing and quality assurance</li>
+                            <li>Post-launch support and updates</li>
+                        </ul>
+                    </div>
+                    <div class="sec3-part3-img">
+                        <img src="Home Images/sec3-ellipse-2.png" alt="Ellipse" height="94px" width="94px"/>
+                    </div>
+                    <button type="button" class="section3-btn1">Explore Mobile Development <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <!-- Add other sections similar to the one above for remaining services -->
+            
+            <div class="col section3-part2" id="qa-testing">
+                <img src="Home Images/sec3-dot.png" alt="Dot" height="48px" width="52px"/>
+                <h2>QA Testing<span style="color: #2CA068;"> Services</span></h2>
+                <br/>
+                <div class="section3-part3">
+                    <h4>Empowering your business on the go</h4>
+                    <br/>
+                    <p>Unlock the potential of mobile platforms with our custom mobile app development services. We specialize in creating intuitive, scalable, and high-performing mobile solutions tailored to your specific business needs.</p>
+                    <br/>
+    
+                    <div class="row section3-part3-icon">
+                        <ul class="col" style="margin-left: 60px;">
+                            <li>Native and cross-platform development</li>
+                            <li>User-centric design approach</li>
+                            <li>Integration with backend systems</li>
+                        </ul>
+                        <ul class="col">
+                            <li>Scalable architecture for future growth</li>
+                            <li>Thorough testing and quality assurance</li>
+                            <li>Post-launch support and updates</li>
+                        </ul>
+                    </div>
+                    <div class="sec3-part3-img">
+                        <img src="Home Images/sec3-ellipse-2.png" alt="Ellipse" height="94px" width="94px"/>
+                    </div>
+                    <button type="button" class="section3-btn1">Explore Mobile Development <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <!-- Add other sections similar to the one above for remaining services -->
+            
+            <div class="col section3-part2" id="devops">
+                <img src="Home Images/sec3-dot.png" alt="Dot" height="48px" width="52px"/>
+                <h2>Dev Ops<span style="color: #2CA068;"> Services</span></h2>
+                <br/>
+                <div class="section3-part3">
+                    <h4>Empowering your business on the go</h4>
+                    <br/>
+                    <p>Unlock the potential of mobile platforms with our custom mobile app development services. We specialize in creating intuitive, scalable, and high-performing mobile solutions tailored to your specific business needs.</p>
+                    <br/>
+    
+                    <div class="row section3-part3-icon">
+                        <ul class="col" style="margin-left: 60px;">
+                            <li>Native and cross-platform development</li>
+                            <li>User-centric design approach</li>
+                            <li>Integration with backend systems</li>
+                        </ul>
+                        <ul class="col">
+                            <li>Scalable architecture for future growth</li>
+                            <li>Thorough testing and quality assurance</li>
+                            <li>Post-launch support and updates</li>
+                        </ul>
+                    </div>
+                    <div class="sec3-part3-img">
+                        <img src="Home Images/sec3-ellipse-2.png" alt="Ellipse" height="94px" width="94px"/>
+                    </div>
+                    <button type="button" class="section3-btn1">Explore Mobile Development <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <!-- Add other sections similar to the one above for remaining services -->
+            
+            <div class="col section3-part2" id="cloud">
+                <img src="Home Images/sec3-dot.png" alt="Dot" height="48px" width="52px"/>
+                <h2>Cloud<span style="color: #2CA068;"> Services</span></h2>
+                <br/>
+                <div class="section3-part3">
+                    <h4>Empowering your business on the go</h4>
+                    <br/>
+                    <p>Unlock the potential of mobile platforms with our custom mobile app development services. We specialize in creating intuitive, scalable, and high-performing mobile solutions tailored to your specific business needs.</p>
+                    <br/>
+    
+                    <div class="row section3-part3-icon">
+                        <ul class="col" style="margin-left: 60px;">
+                            <li>Native and cross-platform development</li>
+                            <li>User-centric design approach</li>
+                            <li>Integration with backend systems</li>
+                        </ul>
+                        <ul class="col">
+                            <li>Scalable architecture for future growth</li>
+                            <li>Thorough testing and quality assurance</li>
+                            <li>Post-launch support and updates</li>
+                        </ul>
+                    </div>
+                    <div class="sec3-part3-img">
+                        <img src="Home Images/sec3-ellipse-2.png" alt="Ellipse" height="94px" width="94px"/>
+                    </div>
+                    <button type="button" class="section3-btn1">Explore Mobile Development <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+    
+        </div>
+    </div> 
+    
+
+    <!-- section - 4 - Industry Served -->
+
+    <div class="section-4" >
+        <h1 class="sec4-industry">Industry <span style="color: #2CA068;">Served</span></h1>
+        <p>At JustLogix, we specialize in providing cutting-edge IT solutions across a multitude 
+            of industries, fostering innovation, growth, and digital transformation worldwide.</p>
+    </div> 
+
+    <div class="section4-part-1">
+        <div class="row sec4-part1-img-2">
+
+            <div class="row">
+
+                <div class="col">
+                    <div class="image-container">
+                        <img src="Home Images/Eduction_img1.png" height="253px" alt="Education Image">
+                        <div class="overlay">
+                            <h4>Education</h4>
+                            <p >Transforming educational experiences with e-learning solutions, management systems,
+                                and interactive technologies that engage and instruct.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col" >
+                    <div class="image-container-2" >
+                        <img src="Home Images/Retail_img1.png" height="317px" alt="Retail Image">
+                        <div class="overlay">
+                            <h4>Retail</h4>
+                            <p>Explore innovative retail solutions that enhance customer experiences and drive business growth.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col">
+                    <div class="image-container">
+                        <img src="Home Images/Insurance_img1.png" height="253px" alt="Insurance Image">
+                        <div class="overlay">
+                            <h4>Insurance</h4>
+                            <p>Deliver seamless insurance services and solutions with advanced digital platforms and technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col">
+                    <div class="image-container-2">
+                        <img src="Home Images/Banking_img1.png" height="317px" alt="Banking Image">
+                        <div class="overlay">
+                            <h4>Banking</h4>
+                            <p>Empower financial institutions with cutting-edge banking technologies and digital transformation solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+
+        <div class="row sec4-part1-img-2">
+            <div class="col" style="margin-top: -10px;">
+                <div class="image-container-2">
+                    <img src="Home Images/Travel_img1.png" height="317px" alt="Travel Image">
+                    <div class="overlay">
+                        <h4>Travel</h4>
+                        <p>Discover unforgettable travel experiences with our innovative solutions and services.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col" style="margin-top: 25px; margin-left: 10px;">
+                <div class="image-container">
+                    <img src="Home Images/FinTech_img1.png" height="253px" alt="FinTech Image">
+                    <div class="overlay">
+                        <h4>FinTech</h4>
+                        <p>Drive financial innovation and transformation with our cutting-edge FinTech solutions.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col" style="margin-top: -10px;">
+                <div class="image-container-2">
+                    <img src="Home Images/Real Estate_img1.png" height="317px" alt="Real Estate Image">
+                    <div class="overlay">
+                        <h4>Real Estate</h4>
+                        <p>Revolutionize the real estate industry with our advanced technologies and solutions.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col" style="margin-top:10px; margin-right: 15px;">
+                <div class="image-container">
+                    <img src="Home Images/Manufacture_img1.png" height="253px" alt="Manufacturing Image">
+                    <div class="overlay">
+                        <h4>Manufacturing</h4>
+                        <p>Optimize manufacturing processes and drive efficiency with our innovative solutions.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="sec4-btn">
+            <button type="button" class="section4-btn1">Explore More <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></button>
+        </div>
+    </div> 
+
+    <!-- Section - 5 - Technologies Expertise   -->
+
+    <div class="section-5">
+        <div>
+            <h1 class="sec5-tech">Technologies <span style="color: #2CA068;" >Expertise</span></h1>
+            <br/>
+            <p>At JustLogix, our mastery of modern technologies is the foundation upon which we build our innovative solutions. Our team is adept at a 
+                wide range of platforms and frameworks, ensuring versatility and excellence in every project we undertake.</p>
+        </div>
+
+        <div class="row section5-part-1" style="margin-left: 100px;margin-top: 60px;">
+            <div class="col">
+                <p>Frontend</p>
+            </div>
+            <div class="col">
+                <p>Backend</p>
+            </div>
+            <div class="col">
+                <p>Mobility</p>
+            </div>
+            <div class="col" style="margin-left: 20px;">
+                <p>QA</p>
+            </div>
+            <div class="col">
+                <p>Design</p>
+            </div>
+            <div class="col">
+                <p>CMS</p>
+            </div>
+            <div class="col">   
+                <p>Database</p>
+            </div>
+            <div class="col">
+                <p>DevOps</p>
+            </div>
+            
+        </div>
+
+        <div class="row section5-skills" style="margin-top: 40px;margin-left: 20px;">
+            <div class="col">
+                <img src="Home Images/Word Press.png" alt="html">
+                <p style="margin-left: -10px;">WordPress</p>
+            </div>
+            <div class="col">
+                <img src="Home Images/Box Js.png" alt="html">
+                <p>Laravel</p>
+            </div>
+            <div class="col">
+                <img src="Home Images/Angular.png" alt="html">
+                <p>Angular</p>
+            </div>
+            <div class="col">
+                <img src="Home Images/React Js.png" alt="html">
+                <p>React</p>
+            </div>
+            <div class="col">
+                <img src="Home Images/Node js.png" alt="html">
+                <p>Node </p>
+            </div>
+            <div class="col">
+                <img src="Home Images/Vue.png" alt="html">
+                <p style="margin-left: 10px;">Vue</p>
+            </div>
+            <div class="col">
+                <img src="Home Images/Flutter.png" alt="html">
+                <p>Flutter</p>
+            </div>
+            <div class="col">
+                <img src="Home Images/PHP.png" alt="html">
+                <p>PHP</p>
+            </div>
+            <div class="col">
+                <img src="Home Images/drop.png" alt="html">
+                <p>Drupal</p>
+            </div>
+            <div class="col">
+                <img src="Home Images/Bootstrap.png" alt="html">
+                <p>Bootstrap</p>
+            </div>
+            <div class="col">
+                <img src="Home Images/HTML.png" alt="html">
+                <p>HTML 5</p>
+            </div>
+
+        </div>
+
+        <div>
+            <button class="section5-btn1">View More <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></button>
+        </div>
+    </div> 
+
+
+    <!-- Section -6 Our Portfolios  -->
+
+    <div class="section-6">
+
+        <div class="sec6-dot">
+            <img src="Home Images/sec3-dot.png" alt="Dots">
+        </div>
+
+        <div>
+            <h1 class="section-6-head">Our <span style="color: #2CA068;">Portfolios</span></h1>
+        </div>
+
+        <div class="section-6-part1">
+            <div class="row section-6-part2">
+                <div class="col ">
+                    <img src="Home Images/portfolio girl.png" alt="Women" width="468px" height="272px" />
+                </div>
+
+                <div class="col sec6-col1">
+                    <h3>
+                        Kid’s World
+                    </h3>
+                    <h2></h2>
+                    <p style="width: 95%;">Kid’s World was created to give kids a more contained environment filled with family-friendly 
+                        videos on all different topics, igniting your kids’ inner creativity and playfulness. Parents and caregivers 
+                        can guide the journey as your kids discover new and exciting interests along the way.
+                    </p>
+                    <br/>
+                    <button type="button">Read more....</button>
+                </div>
+            </div>
+
+            <div class="row section-6-part3">
+                <div class="col sec6-col2">
+                    <h3>Resto</h3>
+                    <h2></h2>
+                    <p style="width: 90%;">Resto provides you with exciting offers on a plethora of restaurants, exclusive discounts on buffets, 
+                        complimentary dishes & a lot more. Get up to 50% off on food & drinks. Discover new places, cuisines & premium restaurants without the fear of over-spending. 
+                    </p>
+                    <br/>
+                    <button type="button">Read more....</button>
+                </div>
+                <div class="col">
+                    <img src="Home Images/Portfolio food.png" alt="Food" width="468px" height="272px" />
+                </div>
+            </div>
+        </div>
+
+        <div class="sec6-scribble">
+            <img src="Home Images/scribble Portfolio.png" alt="portfolio">
+        </div>
+
+        <button class="section6-btn1">View More <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></button>
+    </div>
+
+
+    <!-- Section - 7 - Our Testimonials -->
+
+    <div class="section-7">
+    
+        <div >
+            <h1 class="sec7-head">Our <span style="color: #2CA068;">Testimonials</span></h1>
+        </div>
+
+        <div class="sec7-arrows">
+            <button type="button" class="sec7-leftarrow">
+                <img src="Home Images/sec 7 left arrow.png" alt="Left Arrow">
+            </button>
+            <button type="button" class="sec7-rightarrow">
+                <img src="Home Images/sec 7 right arrow.png" alt="Right Arrow">
+            </button>
+        </div>
+
+        <div class="sec7-halfDot">
+            <img src="Home Images/section -7 half Dot.png" alt="Dot">
+        </div>
+
+        <div class="row section7-part1">
+
+            <div class="col-5 section7-col1">
+                <h1>200+</h1>
+                <h2>Clients Already Served</h2>
+            </div>
+
+            <div class="col-1"></div>
+
+            <div class="col-6 section7-col2">
+                <div class="section-7-colen">
+                    <img src="Home Images/sec - 7 colen.png" alt="Colen">
+                </div>
+                <p style="margin-top: 70px;margin-left: 40px; width: 90%;">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint eum laudantium 
+                    quam aut minus debitis quo consequatur maxime!
+                </p>
+                <div class="row sec7-proect-manager">
+                    <div class="col-1">
+                        <img src="Home Images/section 7 women.png" alt="Women">
+                    </div>
+                    <div class="col-4 sec7-small-content">
+                        <h5>Mizara Mona</h5>
+                        <p>Project manager </p>
+                    </div>
+                    <div class=" col-4 sec7-star">
+                        <img src="Home Images/section 7 star.png" alt="star">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec-7-rotation ">
+            <img src="Home Images/rotation - section 7.png" alt="Rotation">
+        </div>
+    </div>
+
+<!--  section 8 - News and Blogs  -->
+
+    <div class="about_session10_maindiv">
+        <p class="about_session10_para1">
+        News and <span class="about_session10_span">Blogs</span>
+        </p>
+        <p class="about_session10_para2">
+        Our happiness is in sharing our journey and experiences with you through our articles and blog posts. Feel free to
+        check them and leave your comments
+        </p>
+
+
+
+        <img class="about_session10_image_dot" src="Home Images/sec3-dot.png"/>
+
+        <div class="row about_session10_row_main">
+        <div class="col-3 about_session10_col">
+            <img class="about_session10_image" src="Home Images/b1.png">
+            <p class="about_session10_image_p1">
+            MEDICAL
+            </p>
+            <p class="about_session10_image_p2">
+            The Future of Cross-Chain Swaps
+            </p>
+
+            <div class="row about_session10_row">
+            <div class="col ">
+                <img src="Home Images/p1.png" alt="profile" class="about_session10_col_profile">
+            </div>
+            <div class="col">
+                <p class="about_session10_col_profile_name">
+                Kingston Prince
+                </p>
+            </div>
+            <div class="col">
+                <p class="about_session10_col_profile_dob">
+                Jan 19,2023
+                </p>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="col-3 about_session10_col">
+            <img class="about_session10_image" src="Home Images/b2.png">
+            <p class="about_session10_image_p1" style="background: rgba(146, 237, 223, 1);">
+            CHATBOT
+            </p>
+            <p class="about_session10_image_p2">
+            The Future of Cross-Chain Swaps
+            </p>
+            <div class="row about_session10_row">
+            <div class="col ">
+                <img src="Home Images/p1.png" alt="profile" class="about_session10_col_profile">
+            </div>
+            <div class="col">
+                <p class="about_session10_col_profile_name">
+                Kingston Prince
+                </p>
+            </div>
+            <div class="col">
+                <p class="about_session10_col_profile_dob">
+                Jan 19,2023
+                </p>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="col-3 about_session10_col">
+            <img class="about_session10_image" src="Home Images/b3.png">
+        
+
+            <p class="about_session10_image_p1" style="background: rgba(174, 211, 242, 1); width: 40px;">
+            IOT
+            </p>
+            <p class="about_session10_image_p2">
+            The Future of Cross-Chain Swaps
+            </p>
+            <div class="row about_session10_row">
+            <div class="col ">
+                <img src="Home Images/p1.png" alt="profile" class="about_session10_col_profile">
+            </div>
+            <div class="col">
+                <p class="about_session10_col_profile_name">
+                Kingston Prince
+                </p>
+            </div>
+            <div class="col">
+                <p class="about_session10_col_profile_dob">
+                Jan 19,2023
+                </p>
+            </div>
+            </div>
+        </div>
+        
+
+
+        </div>
+        <button type="button" class="about_session10_button">View More Clints &rarr;</button>
+    </div>
+
+<!-- sectionc - 9 - get in Touch  -->
+
+   
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>fghj</h1>
+
+<!-- Footer -->
+
+<div class="form-background">
+    <div class="container">
+      <div class="row form-body">
+        <div class="col-md-6 form-content">
+          <div class="form-head">Get in <span class="form-touch">Touch</span></div>
+          <h5 class="form-top">Want to start a project with us?</h5>
+          <p class="form-paragraph">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed mol stias animi ad quos modi qui libero laborum ab omnis magnam.</p>
+          <ul class="custom-list">
+            <li class="form-point">Sed mol stias animi ad quos modi qui libero </li>
+            <li class="form-point">Quis porro id suscipit quam qui excepturi </li>
+            <li class="form-point">Lorem ipsum dolor sit amet. Non commodi aliquam </li>
+          </ul>
+          <div class="row profile-name-row ">
+            <div>
+              <img src="Home Images/p1.png" class="formprofile" alt="formprofile" >
+              </div>
+            <div class="col">
+              <div class="row">
+                <div class="col profilename">
+                  <p>Kingston Prince</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col profiletext">
+                  <p>Sales Lead</p>
+                </div>
+                <div class="col profiletext profiletext2">
+                  <p>sales@justlogix.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="Home Images/sec3-dot.png" class="dotimage">
+        </div>
+        <div class="col-md-6 form-content2">
+          <img src="Home Images/session11circle.png" class="circleimage">
+          <div class="form-container">
+            <h3 class="form-text">Send Your <span class="form-touch">Idea's</span></h3>
+            <div class="form-line"></div>
+            <form>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="firstname">First Name<span class="form-star">*</span></label>
+                  <input id="firstname" type="text" class="form-control" name="first name">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="lastname">Last Name<span class="form-star">*</span></label>
+                  <input id="lastname" type="text" class="form-control" name="last name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email<span class="form-star">*</span></label>
+                <input id="email" type="email" class="form-control" name="email">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-control" name="message" style="height: 100px;"></textarea>
+              </div>
+              <button type="submit" class="form-button">Start Your Project</button>
+            </form>
+          </div>
+          <img src="Home Images/session11arrow.png" class="arrowimage">
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+    <div class="row footer-columns">
+      <div id="footer-column" class="col-md-2 footer-column footer-about">
+        <h3 id="footer-head">About <i class="bi bi-chevron-down footer-arrow-icon"></i></h3>
+        <ul id="footer-menu">
+          <li>Who We Are</li>
+          <li>Career</li>
+          <li>How We Work</li>
+          <li>Blogs</li>
+          <li>Get in Touch</li>
+        </ul>
+        <hr class="footer-line">
+      </div>
+      <div id="footer-column" class="col-md-2 footer-column footer-services">
+        <h3 id="footer-head">Services <i class="bi bi-chevron-down footer-arrow-icon"></i></h3>
+        <ul id="footer-menu">
+          <li>Web App Development</li>
+          <li>Mobile App Development</li>
+          <li>Software Development</li>
+          <li>Support & Maintenance</li>
+          <li>QA Testing</li>
+          <li>DevOps</li>
+          <li>Blog</li>
+          <li>Cloud Services</li>
+        </ul>
+        <hr class="footer-line service-line">
+      </div>
+      <div id="footer-column" class="col-md-2 footer-column footer-technologies">
+        <h3 id="footer-head">Technologies <i class="bi bi-chevron-down footer-arrow-icon"></i></h3>
+        <ul id="footer-menu">
+          <li>Blockchain</li>
+          <li>Artificial Intelligence</li>
+          <li>AR & VR</li>
+          <li>Cloud Computing</li>
+          <li>Internet of Things</li>
+          <li>more...</li>
+        </ul>
+        <hr class="footer-line">
+      </div>
+      <div id="footer-column" class="col-md-2 footer-column footer-industries">
+        <h3 id="footer-head">Industries <i class="bi bi-chevron-down footer-arrow-icon"></i></h3>
+        <ul id="footer-menu">
+          <li>FinTech</li>
+          <li>Banking</li>
+          <li>Retail</li>
+          <li>Manufacturing</li>
+          <li>Insurance</li>
+          <li>Real Estate</li>
+          <li>Travel & Tourism</li>
+          <li>Education</li>
+        </ul>
+        <hr class="footer-line">
+      </div>
+      <div id="footer-column" class="col-md-2 footer-column footer-portfolios" id="footer-portfolios">
+        <h3 id="footer-head">Portfolios <i class="bi bi-chevron-down footer-arrow-icon"></i></h3>
+        <ul id="footer-menu">
+          <li>Kid's World</li>
+          <li>Resto</li>
+        </ul>
+        <hr class="footer-line">
+      </div>
+    </div>
+    <hr class="footer-border">
+    <div class="footer-columns">
+      <div class="footer-text1">
+        <p>Privacy Policy  |  Terms & Conditions  |  Sitemap</p>
+      </div>
+      <div class="footer-text2">
+        <p><span class="copysymbol">&copy;</span>2024 All Rights Reserved - justlogix.com</p>
+      </div>
+      <div class="footer-text3">
+        <a href="#" class="btn btn-link icon"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="btn btn-link icon"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="btn btn-link icon"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="btn btn-link icon"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+  </footer>
+
+
+        <!-- Bootstrap JS and dependencies -->
+        <script src="home.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
