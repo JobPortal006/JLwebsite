@@ -1275,24 +1275,28 @@
 .bottom-buttons {
     text-align: center;
     margin-top: 50px;
-    gap: 10px;
+    /* gap: 10px; */
   }
 
   .bottom-buttons button {
-    margin: 0 5px;
     width: 10px;
     height: 10px;
+    gap: 0px;
+    border-radius: 8px;
+    opacity: 0px;
     background-color: rgba(196, 196, 196, 1);
-    border: none;
-    border-radius: 50%;
     cursor: pointer;
-    transition:  0.3s ease;
+    border: none;
    
   }
 
   .bottom-buttons button.active {
-    background-color: rgba(44, 160, 104, 1);
-    
+  background: rgba(44, 160, 104, 1);
+  width: 24px;
+  height: 8px;
+  gap: 0px;
+  border-radius: 8px;
+  opacity: 0px;    
    
 
   }
