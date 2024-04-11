@@ -282,3 +282,135 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+  
+  // document.addEventListener("DOMContentLoaded", function() {
+  //   const frontForm = document.querySelector('.webapp_section_10_testimonialfrontform');
+  //   const backForm = document.querySelector('.webapp_section_10_testimonialbackform');
+  //   const carousels = document.querySelectorAll('.webapp_section_10_testimonialcarosuel div');
+  
+  //   // Initially activate the first carousel item
+  //   carousels[0].classList.add('active');
+  
+  //   // Click event listener for each carousel item
+  //   carousels.forEach((carousel, index) => {
+  //     carousel.addEventListener('click', function() {
+  //       // Remove 'active' class from all carousel items
+  //       carousels.forEach((c) => c.classList.remove('active'));
+        
+  //       // Add 'active' class to clicked carousel item
+  //       carousel.classList.add('active');
+        
+  //       // Toggle visibility of front and back forms based on the index of clicked carousel item
+  //       if (index === 0) {
+  //         // If first carousel item is clicked, show front form and hide back form
+  //         frontForm.style.opacity = 1;
+  //         backForm.style.opacity = 0;
+  //       } else {
+  //         // If any other carousel item is clicked, hide front form and show back form
+  //         frontForm.style.opacity = 0;
+  //         backForm.style.opacity = 1;
+  //       }
+  //     });
+  //   });
+  // });
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    const frontForm = document.querySelector('.webapp_section_10_testimonialfrontform');
+    const backForm = document.querySelector('.webapp_section_10_testimonialbackform');
+    const backForm3 = document.querySelector('.webapp_section_10_testimonialbackform3');
+    const backForm4 = document.querySelector('.webapp_section_10_testimonialbackform4');
+    const carousels = document.querySelectorAll('.webapp_section_10_testimonialcarosuel div');
+
+    // Initially activate the first carousel item
+    carousels[0].classList.add('active');
+
+    // Click event listener for each carousel item
+    carousels.forEach((carousel, index) => {
+        carousel.addEventListener('click', function() {
+            // Remove 'active' class from all carousel items
+            carousels.forEach((c) => c.classList.remove('active'));
+            
+            // Add 'active' class to clicked carousel item
+            carousel.classList.add('active');
+            
+            // Toggle visibility of front and back forms based on the index of clicked carousel item
+            if (index === 0) {
+                // If first carousel item is clicked, show front form and hide back forms
+                frontForm.style.opacity = 1;
+                backForm.style.opacity = 0;
+                backForm3.style.opacity = 0;
+                backForm4.style.opacity = 0;
+            } else if (index === 1) {
+                // If second carousel item is clicked, hide front form and show first back form
+                frontForm.style.opacity = 0;
+                backForm.style.opacity = 1;
+                backForm3.style.opacity = 0;
+                backForm4.style.opacity = 0;
+            } else if (index === 2) {
+                // If third carousel item is clicked, hide front form and show second back form
+                frontForm.style.opacity = 0;
+                backForm.style.opacity = 0;
+                backForm3.style.opacity = 1;
+                backForm4.style.opacity = 0;
+            } else if (index === 3) {
+                // If fourth carousel item is clicked, hide front form and show third back form
+                frontForm.style.opacity = 0;
+                backForm.style.opacity = 0;
+                backForm3.style.opacity = 0;
+                backForm4.style.opacity = 1;
+            }
+        });
+    });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const caseStudiesCenters = document.querySelectorAll('.webapp_section_11_casestudiescenter');
+  const caseLeftButton = document.querySelector('.webapp_section_11_caseleftbutton');
+  const caseRightButton = document.querySelector('.webapp_section_11_caserightbutton');
+  let currentIndex = 0;
+
+  function updateButtonState() {
+      if (currentIndex === 0) {
+          caseLeftButton.classList.add('disabled');
+      } else {
+          caseLeftButton.classList.remove('disabled');
+      }
+
+      if (currentIndex === caseStudiesCenters.length - 1) {
+          caseRightButton.classList.add('disabled');
+      } else {
+          caseRightButton.classList.remove('disabled');
+      }
+  }
+
+  updateButtonState();
+
+  caseRightButton.addEventListener('click', function() {
+      currentIndex++;
+      caseStudiesCenters[currentIndex - 1].style.display = 'none';
+      caseStudiesCenters[currentIndex].style.display = 'block';
+      updateButtonState();
+
+      if (currentIndex === caseStudiesCenters.length - 1) {
+          caseRightButton.classList.add('disabled');
+      }
+  });
+
+  caseLeftButton.addEventListener('click', function() {
+      currentIndex--;
+      caseStudiesCenters[currentIndex + 1].style.display = 'none';
+      caseStudiesCenters[currentIndex].style.display = 'block';
+      updateButtonState();
+
+      if (currentIndex === 0) {
+          caseLeftButton.classList.add('disabled');
+      }
+  });
+});
+
+
+
+
+
