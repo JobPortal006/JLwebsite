@@ -1,137 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Slider</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles */
+    .card-container {
+      width: 100%;
+      background-color: aqua;
+      display: flex;
+      overflow-x: hidden; /* changed to hidden */
+      scrollbar-width: none; /* Hide scrollbar for Firefox */
+      -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+      scrollbar-width: none; /* Hide scrollbar for Chrome/Safari */
+      -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    }
+  
+    .card {
+      flex: 0 0 auto;
+      width: 230px;
+      height: 270px;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: background-color 0.3s; /* Add transition for smooth color change */
+    }
+  
+    .card:hover {
+      background-color: green; /* Change background color on hover */
+    }
+  
+    .card-body {
+      width: 100%;
+      height: auto;
+      margin-top: 25%;
+    }
+  
+    /* Hide scrollbar for Chrome/Safari */
+    .card-container::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .slider-controls {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .slider-controls button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+  
+    /* Align card title and text */
+    .card-title,
+    .card-text,
+    .additional-text {
+      margin: auto;
+      color: white; /* Set default text color */
+    }
+
+    @media (max-width: 767px) {
+      .card-container {
+        flex-direction: column; /* Display cards vertically */
+        overflow-y: auto; /* Enable vertical scrolling */
+      }
+      .slider-controls {
+        display: none; /* Hide slider controls */
+      }
+      .card {
+        background-color: transparent; /* Remove background color */
+        width: 100%;
+      }
+      .card:hover {
+      background-color: transparent; /* Change background color on hover */
+    }
+      .slider-controls {
+        display: none; /* Hide slider controls */
+      }
+    }
+  </style>
+  
 </head>
 <body>
-    <!-- <div class="container">
-        <div class="Web-App-Development-Service-layout">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-            <div class="Web-App-Development-Service-col1">
-            <div class="Web-App-Development-Service-header">
-            <h2 class="Web-App-Development-Service-heading">Web App Development Service </h2>
-            </div>
-            <div class="Web-App-Development-Service-Leverage-cutting-edge">
-            <p class="Web-App-Development-Service-para1">"Leverage cutting-edge technology and expert consultancy to drive your business forward in the digital age."</p>
-            </div>
-            <div class="Web-App-Development-Service-develop-scalable">
-            <p class="Web-App-Development-Service-para2">Develop a scalable, dynamic, and feature-rich application with our Angular js development company. Our skilled experts are proficient in providing engaging and effective Angular development services with a proven record of success.</p>
-            </div>
-            <div class="Web-App-Development-Service-button">
-            <button class="btn ">Discover Our Service</button>
-            </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-12  d-flex align-items-center justify-content-center">
-            <div class="Web-App-Development-Service-mainimage ">
-            <img src="../demowebapp/webdev image/web development service.png" class="img-fluid" alt="Image">
-            </div>
-          </div>
-        </div>
-    </div>
-      </div> -->
 
-
-      <div class="container">
-        <!-- First Row -->
-        <div class="Web-Development-Service2-layout2">
-        <div class="row">
-          <div class="col-12">
-            <div class="Web-Development-Service2-header">
-            <h2 class="Web-Development-Service2-heading">Web Development <span>Services <img src="../demowebapp/webdev image/Rectangle 81.png"/></span></h2>
-            </div>
-          </div>
+<div class="container">
+  <h1>Card Slider</h1>
+  <div class="cardlayout">
+    <div class="card-container" id="cardContainer">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card 1</h5>
+          <p class="card-text">This is a sample card.</p>
+          <p class="additional-text">Additional Text 1</p> <!-- Additional Text -->
         </div>
-        <!-- Second Row -->
-        <div class="row">
-          <div class="col-12">
-            <div class="Custom-web-development">
-            <p class="Custom-web-development-para1">Custom web development is a unique service that ClickBox Agency provides. We make digital solutions that fit the specific wants and goals of each client. Custom web creation, on the other hand, means making websites and apps from scratch, making sure they fit the client's needs exactly. We are great at making custom web solutions that fit the brand identity, business methods, and goals for the user experience of the client.We include clients in all stages of growth, from coming up with ideas to putting them into action, through a collaborative process.</p>
-            </div>
-        </div>
-        </div>
-        <!-- Third Row with Five Columns -->
-        <div class="row g-3 justify-content-center">
-            <!-- Column 1 -->
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="text-center web-development-text">Web Development</h3>
-                        <h3 class="card-title text-center">Column 1</h3>
-                        <div class="cardline">cardline</div>
-                        <p class="card-text text-left">Column 1 content goes here.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Column 2 -->
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="text-center web-development-text">Web Development</h3>
-                        <h3 class="card-title text-center">Column 2</h3>
-                        <div class="cardline">cardline</div>
-                        <p class="card-text text-left">Column 2 content goes here.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Column 3 -->
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="text-center web-development-text">Web Development</h3>
-                        <h3 class="card-title text-center">Column 3</h3>
-                        <div class="cardline">cardline</div>
-                        <p class="card-text text-left">Column 3 content goes here.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Column 4 -->
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="text-center web-development-text">Web Development</h3>
-                        <h3 class="card-title text-center">Column 4</h3>
-                        <div class="cardline">cardline</div>
-                        <p class="card-text text-left">Column 4 content goes here.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Column 5 -->
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="text-center web-development-text">Web Development</h3>
-                        <h3 class="card-title text-center">Column 5</h3>
-                        <div class="cardline">cardline</div>
-                        <p class="card-text text-left">Column 5 content goes here.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-      
-        <!-- Fourth Row with Arrow Icons -->
-        <div class="row mt-5">
-          <div class="col-12">
-            <i class="bi bi-arrow-left" ></i>
-            <i class="bi bi-arrow-right" ></i>
-          </div>
-        </div>
-    </div>
       </div>
-      
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card 2</h5>
+          <p class="card-text">This is a sample card.</p>
+          <p class="additional-text">Additional Text 2</p> <!-- Additional Text -->
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card 3</h5>
+          <p class="card-text">This is a sample card.</p>
+          <p class="additional-text">Additional Text 3</p> <!-- Additional Text -->
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card 4</h5>
+          <p class="card-text">This is a sample card.</p>
+          <p class="additional-text">Additional Text 4</p> <!-- Additional Text -->
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card 5</h5>
+          <p class="card-text">This is a sample card.</p>
+          <p class="additional-text">Additional Text 5</p> <!-- Additional Text -->
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card 6</h5>
+          <p class="card-text">This is a sample card.</p>
+          <p class="additional-text">Additional Text 6</p> <!-- Additional Text -->
+        </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card 7</h5>
+          <p class="card-text">This is a sample card.</p>
+          <p class="additional-text">Additional Text 7</p> <!-- Additional Text -->
+        </div>
+      </div>
+      <!-- Card 8 -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card 8</h5>
+          <p class="card-text">This is a sample card.</p>
+          <p class="additional-text">Additional Text 8</p> <!-- Additional Text -->
+        </div>
+      </div>
+      <!-- Card 9 -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card 9</h5>
+          <p class="card-text">This is a sample card.</p>
+          <p class="additional-text">Additional Text 9</p> <!-- Additional Text -->
+        </div>
+      </div>
+      <!-- Card 10 -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card 10</h5>
+          <p class="card-text">This is a sample card.</p>
+          <p class="additional-text">Additional Text 10</p> <!-- Additional Text -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Slider Controls -->
+  <div class="slider-controls">
+    <button id="prevBtn" class="btn">&#8249;</button>
+    <button id="nextBtn" class="btn">&#8250;</button>
+  </div>
+</div>
+
+<!-- Bootstrap JS and JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+   // JavaScript to handle touch events on mobile
+   document.addEventListener('touchstart', handleTouchStart, false);
+  document.addEventListener('touchmove', handleTouchMove, false);
+
+  let xDown = null;
+  let yDown = null;
+
+  function handleTouchStart(event) {
+    const firstTouch = event.touches[0];
+    xDown = firstTouch.clientX;
+    yDown = firstTouch.clientY;
+  }
+
+  function handleTouchMove(event) {
+    if (!xDown || !yDown) {
+      return;
+    }
+
+    const xUp = event.touches[0].clientX;
+    const yUp = event.touches[0].clientY;
+
+    const xDiff = xDown - xUp;
+    const yDiff = yDown - yUp;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+      if (xDiff > 0) {
+        // Right swipe detected
+        nextSlide();
+      } else {
+        // Left swipe detected
+        prevSlide();
+      }
+    }
+
+    // Reset values
+    xDown = null;
+    yDown = null;
+  }
+
+  // Function to show cards
+  function showCards(currentIndex) {
+    const cards = document.querySelectorAll('.card');
+    for (let i = 0; i < cards.length; i++) {
+      if (i >= currentIndex && i < currentIndex + 5) {
+        cards[i].style.display = 'block';
+      } else {
+        cards[i].style.display = 'none';
+      }
+    }
+  }
+
+  // Initialize currentIndex
+  let currentIndex = 0;
+  showCards(currentIndex);
+
+  // Function to show next slide
+  function nextSlide() {
+    const cards = document.querySelectorAll('.card');
+    if (currentIndex + 5 < cards.length) {
+      currentIndex++;
+      showCards(currentIndex);
+    }
+  }
+
+  // Function to show previous slide
+  function prevSlide() {
+    if (currentIndex - 1 >= 0) {
+      currentIndex--;
+      showCards(currentIndex);
+    }
+  }
+
+  //==================
 
 
-      
+  document.addEventListener('DOMContentLoaded', function () {
+    const cardContainer = document.getElementById('cardContainer'); // changed selector
+    const cards = document.querySelectorAll('.card');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentIndex = 0;
 
+    // Function to show cards
+    function showCards() {
+      for (let i = 0; i < cards.length; i++) {
+        if (i >= currentIndex && i < currentIndex + 5) {
+          cards[i].style.display = 'block';
+        } else {
+          cards[i].style.display = 'none';
+        }
+      }
+    }
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    // Show initial set of cards
+    showCards();
+
+    // Event listener for next button
+    nextBtn.addEventListener('click', function () {
+      if (currentIndex + 5 < cards.length) {
+        cardContainer.scrollBy({ left: 215, behavior: 'smooth' }); // changed to scrollBy
+        currentIndex += 1; // changed index increment
+        showCards();
+      }
+    });
+
+    // Event listener for previous button
+    prevBtn.addEventListener('click', function () {
+      if (currentIndex - 1 >= 0) {
+        cardContainer.scrollBy({ left: -215, behavior: 'smooth' }); // changed to scrollBy
+        currentIndex -= 1; // changed index decrement
+        showCards();
+      }
+    });
+  });
+</script>
 </body>
 </html>

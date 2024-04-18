@@ -315,3 +315,20 @@
   }
   
   */
+
+
+
+  /* === */
+
+  #contentContainer {
+    overflow-x: auto;
+    white-space: nowrap; /* Ensure content stays on a single line */
+}
+
+/* Style for the arrow buttons */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}

@@ -961,9 +961,9 @@ text-align: left;
     transform: rotate(180deg);
     border-radius: 15px;
 }
-.agiledropdown.rotate {
-    transform: rotate(180deg); /* Rotate the image 90 degrees */
-}
+/* .agiledropdown.rotate {
+    transform: rotate(180deg); 
+} */
 
 
 
