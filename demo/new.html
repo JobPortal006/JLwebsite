@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+    <style>
+        .Web-Development-Services-layout2{
+            width: 100%;
+        }
+        .Web-Development-Services-boxeslayout{
+            width: 100%;
+        }
+        .Web-Development-Services-box{
+            width: 204px;
+            height: 280px;
+            gap: 0px;
+            border: 1px;
+            background: #FFFFFF;
+            border: 1px solid #E9E9E9
+        }
+        .beforehovering{
+            width: 100%;
+            margin-top: 50%;
+            margin-left: 2px;
+            padding: 4px;
+            
+        }
+        .beforehovering-heading{
+            width: 100%;
+            font-family: 'Source Sans Pro',sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 30.17px;
+            text-align: left;
+
+        }
+        .beforehovering-heading-line{
+            width: 132px;
+            height: 0px;
+            border: 2px;
+            border: 2px solid #414042
+        }
+        .afterhovering{
+            width: 100%;
+            padding: 5px;
+        }
+        .afterhovering-heading{
+            width: 100%;
+            font-family: 'Source Sans Pro',sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 29px;
+            text-align: left;
+        }
+        .afterhovering-paragraph{
+            width: 100%;
+            font-family: 'Source Sans Pro',sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: left;
+            margin-top: 7px;
+        }
+        .afterhovering-heading-line{
+            width: 132px;
+            height: 0px;
+            border: 2px;
+            border: 2px solid #414042
+        }
+        .Web-Development-Services-box:hover .beforehovering {
+            display: none;
+        }
+
+        .Web-Development-Services-box:hover .afterhovering {
+            display: block;
+            background: #2CA068;
+            box-shadow: 6px 6px 24px 0px #0000004D;
+            color: white;
+        }
+        .Web-Development-Services-box:hover .afterhovering-heading-line{
+            border: 2px solid #FFFFFF
+        }
+        .afterhovering {
+            display: none;
+        }
+        @media screen and (max-width: 767px) {
+            .Web-Development-Services-boxeslayout{
+                display: flex;
+                flex-direction: column;
+            }
+    .beforehovering {
+        display: none; /* Hide beforehovering content on mobile */
+    }
+    .Web-Development-Services-box{
+        width: 100%;
+        height: auto;
+    }
+    .afterhovering {
+        display: block; /* Display afterhovering content by default on mobile */
+        background: white;
+        color: black;
+        padding: 5px;
+    }
+
+    .afterhovering-heading-line {
+        border: 2px solid #FFFFFF;
+    }
+
+    .Web-Development-Services-box:hover .afterhovering {
+        background: #2CA068; /* Keep the background color consistent even on hover */
+        box-shadow: 6px 6px 24px 0px #0000004D;
+        color: white;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="Web-Development-Services-layout2">
+    <div class="Web-Development-Services-header"><h1 class="Web-Development-Services-heading">Web Development <span>Services <img src="../demowebapp/webdev image/Rectangle 81.png" /></span></h1></div>
+    <div class="Web-Development-Services-para1"><p class="Custom-web-development">Custom web development is a unique service that ClickBox Agency provides. We make digital solutions that fit the specific wants and goals of each client. Custom web creation, on the other hand, means making websites and apps from scratch, making sure they fit the client's needs exactly. We are great at making custom web solutions that fit the brand identity, business methods, and goals for the user experience of the client.We include clients in all stages of growth, from coming up with ideas to putting them into action, through a collaborative process.</p></div>
+    <div class="Web-Development-Services-boxeslayout">
+        <div class="row">
+            <div class="col">
+                <div class="Web-Development-Services-box">
+                    <div class="beforehovering" >
+                        <h4 class="beforehovering-heading">
+                            Customer Web App Development
+                        </h4>
+                        <div class="beforehovering-heading-line"></div>
+                    </div>
+                    <div class="afterhovering">
+                        <h3 class="afterhovering-heading">
+                            Customer Web App Development
+                        </h3>
+                        <div class="afterhovering-heading-line"></div>
+                        <p class="afterhovering-paragraph">ClickBox Agency is great at developing WordPress websites and provides a full service that mixes creativity and usefulness. Our professional team uses WordPress to make websites that are active and easy for people to use that are tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="Web-Development-Services-box">
+                    <div class="beforehovering" >
+                        <h4 class="beforehovering-heading">
+                            Frontend Design & Development
+                        </h4>
+                        <div class="beforehovering-heading-line"></div>
+                    </div>
+                    <div class="afterhovering">
+                        <h3 class="afterhovering-heading">
+                            Frontend Design & Development
+                        </h3>
+                        <div class="afterhovering-heading-line"></div>
+                        <p class="afterhovering-paragraph">ClickBox Agency is great at developing WordPress websites and provides a full service that mixes creativity and usefulness. Our professional team uses WordPress to make websites that are active and easy for people to use that are tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="Web-Development-Services-box">
+                    <div class="beforehovering" >
+                        <h4 class="beforehovering-heading">
+                            Backend Development
+                        </h4>
+                        <div class="beforehovering-heading-line"></div>
+                    </div>
+                    <div class="afterhovering">
+                        <h3 class="afterhovering-heading">
+                            Backend Development
+                        </h3>
+                        <div class="afterhovering-heading-line"></div>
+                        <p class="afterhovering-paragraph">ClickBox Agency is great at developing WordPress websites and provides a full service that mixes creativity and usefulness. Our professional team uses WordPress to make websites that are active and easy for people to use that are tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="Web-Development-Services-box">
+                    <div class="beforehovering" >
+                        <h4 class="beforehovering-heading">
+                            CMS <br/> Development
+                        </h4>
+                        <div class="beforehovering-heading-line"></div>
+                    </div>
+                    <div class="afterhovering">
+                        <h3 class="afterhovering-heading">
+                            CMS <br/> Development
+                        </h3>
+                        <div class="afterhovering-heading-line"></div>
+                        <p class="afterhovering-paragraph">ClickBox Agency is great at developing WordPress websites and provides a full service that mixes creativity and usefulness. Our professional team uses WordPress to make websites that are active and easy for people to use that are tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="Web-Development-Services-box">
+                    <div class="beforehovering" >
+                        <h4 class="beforehovering-heading">
+                            SaaS App Development
+                        </h4>
+                        <div class="beforehovering-heading-line"></div>
+                    </div>
+                    <div class="afterhovering">
+                        <h3 class="afterhovering-heading">
+                            SaaS App Development
+                        </h3>
+                        <div class="afterhovering-heading-line"></div>
+                        <p class="afterhovering-paragraph">ClickBox Agency is great at developing WordPress websites and provides a full service that mixes creativity and usefulness. Our professional team uses WordPress to make websites that are active and easy for people to use that are tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
