@@ -33,6 +33,24 @@
 // });
 
 
+function toggleAdditionalBoxes() {
+  var initialBoxes = document.querySelectorAll('.webapp_section_2_box:not(.additional-boxes .webapp_section_2_box)');
+  var additionalBoxes = document.querySelectorAll('.additional-boxes .webapp_section_2_box');
+
+  // Hide initial boxes
+  initialBoxes.forEach(function(box) {
+    box.style.display = 'none';
+  });
+
+  // Show additional boxes
+  additionalBoxes.forEach(function(box) {
+    box.style.display = 'flex';
+  });
+}
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const box = document.querySelector('.webapp_section_3_blackbox');
     const ellipse = document.querySelector('.ellipse');
@@ -313,6 +331,8 @@ document.addEventListener('DOMContentLoaded', function() {
   //     });
   //   });
   // });
+
+  
   
   document.addEventListener("DOMContentLoaded", function() {
     const frontForm = document.querySelector('.webapp_section_10_testimonialfrontform');

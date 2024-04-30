@@ -1,0 +1,66 @@
+.iOS-App-Development-Services-layout1{
+    width: 100%;
+    background-color: aquamarine;
+}
+.iOS-App-Development-Services-header{
+    width: 100%;
+}
+.iOS-App-Development-Services-heading{
+    width: 100%;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 70.39px;
+    text-align: left;
+    color: #000000;
+}
+.iOS-App-Development-Services-sidepara{
+    width: 100%;
+    margin-top: 32px;
+}
+.iOS-App-Development-Services-para1{
+    width: 100%;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25.14px;
+    text-align: left;
+    color: #414042;
+}
+.iOS-App-Development-Services-mainpara{
+    width: 100%;
+    margin-top: 24px;
+}
+.iOS-App-Development-Services-para2{
+    width: 100%;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #676968;
+}
+.get-in-touch{
+    width: 100%;
+    margin-top: 46px;
+}
+.iOS-App-Development-Services-button{
+    background: linear-gradient(90deg, #23899C 13.04%, #2CA068 91.03%);
+    border: none;
+    padding: 10px 20px 10px 20px;
+    gap: 10px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.63px;
+    text-align: left;
+}
+.iOS-App-Development-Servicescol-1{
+    width: 100%;
+    margin-top: 25px;
+}
+@media (max-width: 768px){
+    
+}

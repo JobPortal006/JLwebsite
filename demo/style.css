@@ -1,0 +1,337 @@
+.Web-App-Development-Service-layout{
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+}
+.Web-App-Development-Service-col1{
+    width: 100%;
+    height: auto;
+}
+.Web-App-Development-Service-header{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+.Web-App-Development-Service-heading{
+    width: 100%;
+    height: auto;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 70.39px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+.Web-App-Development-Service-Leverage-cutting-edge{
+    width: 100%;
+    height: auto;
+}
+.Web-App-Development-Service-para1{
+    width: 100%;
+    height: auto;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25.14px;
+    text-align: left;
+    color: rgba(65, 64, 66, 1);
+    margin-top: 50px;
+}
+.Web-App-Development-Service-develop-scalable{
+    width: 100%;
+    height: auto;
+}
+.Web-App-Development-Service-para2{
+    width: 100%;
+    height: auto;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: rgba(103, 105, 104, 1);
+    margin-top: 18px;
+}
+.Web-App-Development-Service-button{
+    width: 100%;
+    height: auto;
+    background-color: rgb(65, 41, 41);
+}
+.Web-App-Development-Service-mainimage{
+    width: 100%;
+    height: auto;
+    background-color: rgb(10, 10, 10);
+}
+.Web-App-Development-Service-button button{
+    background: linear-gradient(90deg, #248B97 0%, #2CA068 100%);
+    width: 227px;
+    height: 42px;
+    padding: 0px 21px 0px 21px;
+    gap: 0px;
+    border-radius: 8px;
+    opacity: 0px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.63px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width: 767px) {
+    .Web-App-Development-Service-layout {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .Web-App-Development-Service-col1 {
+      text-align: center;
+    }
+
+    .Web-App-Development-Service-header,
+    .Web-App-Development-Service-Leverage-cutting-edge,
+    .Web-App-Development-Service-develop-scalable,
+    .Web-App-Development-Service-button,
+    .Web-App-Development-Service-mainimage {
+      width: 100%;
+    }
+    .Web-App-Development-Service-heading,
+    .Web-App-Development-Service-para1,
+    .Web-App-Development-Service-para2,
+    .Web-App-Development-Service-button button {
+      text-align: center;
+    }
+    .Web-App-Development-Service-heading{
+        width: 100%;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 45.25px;
+    }
+    .Web-App-Development-Service-para1{
+        width: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20.11px;
+    }
+    .Web-App-Development-Service-para2{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        width: 100%;
+    }
+    .Web-App-Development-Service-button button{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.11px;
+        text-align: center;
+    }
+  }
+  
+
+  /*=====================================*/
+
+  .Web-Development-Service2-layout2{
+    width: 100%;
+    height: auto;
+  }
+  .Web-Development-Service2-header{
+    width: 100%;
+    height: auto;
+    /* background-color: #a37272; */
+  }
+  .Web-Development-Service2-heading{
+    width: 100%;
+    height: auto;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60.34px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+  }
+  .Web-Development-Service2-heading span{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60.34px;
+    text-align: left;
+    color: rgba(44, 160, 104, 1);
+  }
+
+
+
+
+  /* .card {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+  }
+  
+  .card:hover {
+    background-color: green;
+    color: white;
+  }
+  .card-body {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .card-body {
+    opacity: 1;
+  } */
+
+  /* Add this CSS to initially hide the card title and text */
+.card .card-title,
+.card .card-text {
+  display: none;
+}
+
+/* Add this CSS to display the "Web Development" text initially */
+.web-development-text {
+  display: block;
+}
+
+/* Add this CSS to handle hover effects */
+.card:hover {
+  background-color: green;
+  color: white;
+  transform: scale(1.05);
+}
+
+.card {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Add transform transition */
+  }
+
+.card:hover .web-development-text {
+  display: none; /* Hide "Web Development" text on hover */
+}
+
+.card:hover .card-title,
+.card:hover .cardline,
+.card:hover .card-text {
+  display: block; /* Display card title and text on hover */
+}
+
+
+
+  
+  
+  @media screen and (max-width: 767px) {
+    .card-body {
+      opacity: 1; /* Always display the card body on mobile screens */
+    }
+  
+    .card {
+      background-color: initial; /* Reset background color */
+      color: initial; /* Reset text color */
+      transition: none; /* Remove transition effect */
+    }
+  
+    .card:hover .card-body {
+      opacity: 1; /* Ensure card body is always visible on mobile */
+    }
+  }
+  
+  /* .Custom-web-development{
+    width: 100%;
+    height: auto;
+  }
+  .Custom-web-development-para1{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: rgba(103, 105, 104, 1);
+    width: 100%;
+    height: auto;
+  }
+  .Web-Development-Service2-5cards{
+    width: 100%;
+    height: 320px;
+    justify-content: center;
+  }
+  .Web-Development-Service2-card1{
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(233, 233, 233, 1);
+  }
+  .Web-Development-Service2-card2{
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(233, 233, 233, 1);
+  }
+  .Web-Development-Service2-card3{
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(233, 233, 233, 1);
+  }
+  .Web-Development-Service2-card4{
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(233, 233, 233, 1);
+  }
+  .Web-Development-Service2-card5{
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(233, 233, 233, 1);
+  }
+  .Customer-Web-App-Development ,.Frontend-Design-Development , .Backend-Development{
+    width: 100%;
+    height: auto;
+  }
+  .Customer-Web-App-Development-heading, .Frontend-Design-Development-heading ,.Backend-Development-heading{
+    width: 100%;
+    height: auto;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30.17px;
+    text-align: left;
+    color: rgba(65, 64, 66, 1);
+  }
+  .Customer-Web-App-Developmentheadingline ,.Frontend-Design-Developmentheadingline ,.Backend-Developmentheadigline{
+    width: 132px;
+    height: 0px;
+    gap: 0px;
+    border: 2px;
+    opacity: 0px;
+    border: 2px solid rgba(65, 64, 66, 1)
+  }
+  .Customer-Web-App-Development-para-layout .Frontend-Design-Development-para-layout .Backend-Development-para-layout{
+    width: 100%;
+    height: auto;
+  }
+  .Customer-Web-App-Development-para .Frontend-Design-Development-para{
+    width: 100%;
+    height: auto;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    background: rgba(255, 255, 255, 1);
+  }
+  
+  */
+
+
+
+  /* === */
+
+  #contentContainer {
+    overflow-x: auto;
+    white-space: nowrap; /* Ensure content stays on a single line */
+}
+
+/* Style for the arrow buttons */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
