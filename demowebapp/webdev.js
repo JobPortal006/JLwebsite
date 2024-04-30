@@ -295,9 +295,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
+//section 3
 document.addEventListener('DOMContentLoaded', function () {
-  const secondCollayout = document.querySelector('.secondcollayout');
+  const secondCollayout = document.querySelector('.Our-Developers-secondcollayout');
 
   secondCollayout.addEventListener('mouseenter', function () {
       document.body.style.cursor = 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'36\' height=\'36\'><circle cx=\'18\' cy=\'18\' r=\'18\' fill=\'rgba(44, 160, 104, 0.72)\'/></svg>") 18 18, auto';
