@@ -727,6 +727,9 @@ text-align: left;
     color: #676968;
 
 }
+.development-row-mobile{
+  display: none !important;
+}
 
 .development-row {
     display: flex;
@@ -762,20 +765,51 @@ text-align: left;
     margin-top: -70px !important;
     width: 570px !important;
 }
-.development-roe-mobile{
+.mobile{
     display: none !important;
 }
 @media (max-width:768px) {
+.development-header {
+font-size: 32px;
+font-weight: 600;
+line-height: 40.22px;
+text-align: left;
+
+}
+.development-discription{
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+color: #676968;
+}
+  .development-row{
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
+  }
     .development-img-col2{
         display: none !important;
     }
     .development-img-mobile{
         display: block !important;
     }
-    .development-roe-mobile{
+    .development-row-mobile{
         display: block !important;
     }
-}
+    .development-row-mobile{
+        display: flex ;
+        justify-content: space-between !important;
+    }
+    
+    .development-col-mobile {
+        flex-basis: 48%;
+        display: flex;
+        align-items: center;
+    }
+    }
+
 /* end of development section================================== */
 
 /* benefits */
