@@ -1189,10 +1189,157 @@ color: #2CA068;
   }
 }
 
+/*section 10==========================*/
+.our-case-studies-maindiv{
+  width: 100%;
+  margin-top: 108px;
+}
+.mobile-app-case-heading{
+  width: 100%;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60.34px;
+  text-align: left;
+}
+.mobile-app-case-heading span{
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60.34px;
+  text-align: center;
+  color: #2CA068;
+}
+.mobile-app-case-heading img{
+  width: 54px;
+  height: 3px;
+  gap: 0px;
+  border-radius: 50px 0px 0px 0px;
+  opacity: 0px;
+
+}
+.mobileapp-case-left-button button{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #137747;
+  box-shadow: 0px 2px 4px 0px #00000040;
+  border: none;
+}
+
+.mobileapp-case-right-button button{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #137747;
+  box-shadow: 0px 2px 4px 0px #00000040;
+  border: none;
+}
+.mobileapp-case-left-button button:hover,
+.mobileapp-case-right-button button:hover{
+  background: #137747;
+}
+
+
+.mobileapp-case-left-button i{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+}
+.mobileapp-case-right-button i{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.Artificial-Intelligence-card{
+  width: 100%;
+  background: #FFF0DE;
+  border-radius: 12px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.Computer-Vision-card{
+  background: #D1DCF2;
+  width: 100%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.Cross-chain-Swaps-card {
+  background: #CEF8FF;
+  width: 100%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.Artificial-Intelligence-innertext{
+  width: 100%;
+  border-radius: 16px;
+  opacity: 0px;
+  background: #FFFFFF;
+  margin-top: 20px;
+  padding: 15px;
+}
+.mobile-app-casestudies-heading{
+  width: 100%;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22.63px;
+  text-align: left;
+}
+.mobile-app-casestudies-para{
+  width: 100%;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #676968;
+}
+.mobile-app-casestudies-link{
+  width: 100%;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.11px;
+  text-align: center;
+  color: #2CA068;
+}
+.mobile-app-casestudies-link:hover{
+  color: #137747;
+  text-decoration: none;
+}
+#cardContainer {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*section 12 ======================================================================*/
 .News-and-Blogs-layout12{
   width: 100%;
-  background-color: #7068e2;
 }
 .News-and-Blogs-heading{
   width: 100%;
@@ -1213,5 +1360,33 @@ color: #2CA068;
 .News-and-Blogs-heading img{
   width: 54px;
   height: 3px;
-  border-radius: 50px 0px 0px 0px;
+  border-radius: 50px;
 }
+.AR-VR-Technology ,.IOT-Application ,.Online-Healthcare-Shopping ,.ChatBot-Integration{
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 20px 12px #B0AFAF1A;
+  border-radius: 4px;
+  opacity: 0px;
+  margin-top: 20px;
+}
+
+.Future-of-AR-VR-heading{
+  width: 100%;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30.17px;
+  text-align: left;
+  margin-left: -40px;
+}
+.Future-of-AR-VR-name{
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.11px;
+  text-align: left;
+  color: #706E72;
+}
+
+
