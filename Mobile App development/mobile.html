@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:hover,
+    .nav-tabs > li.active > a:focus {
+      border:none;
+      border-bottom: 2px solid rgba(44, 160, 104, 1);
+    }
+    .tab-content {
+      margin-top: 50px; /* Add top margin to tab content */
+    }
+    .tab-label {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 25.14px;
+      text-align: left;
+      color: rgba(103, 105, 104, 1);
+    }
+    .active > .tab-label {
+      font-size: 15px;
+      font-weight: 550;
+      line-height: 30px;
+    }
+    .fa-chevron-left,
+    .fa-chevron-right {
+      color: rgba(103, 105, 104, 1);
+    }
+    .icon-black {
+      color: black !important;
+    }
+    .Mobile-App-Development-maindiv2{
+      width: 100%;
+    }
+    .App-Development-header2 h2{
+      width: 100%;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 60.34px;
+      text-align: left;
+    }
+    .App-Development-header2 span{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 60.34px;
+      text-align: left;
+      color: rgba(44, 160, 104, 1);
+    }
+    .App-Development-header2 p{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+      color: rgba(103, 105, 104, 1);
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .tab-buttoninner{
+      width: 250px;
+      height: 42px;
+      padding: 0px 21px 0px 21px;
+      gap: 0px;
+      border-radius: 8px;
+      border: none;
+      opacity: 0px;
+      color: rgba(255, 255, 255, 1);
+      background: linear-gradient(90deg, #248B97 0%, #2CA068 100%);
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22.63px;
+      margin-top: 50px;
+    }
+    .tab-content p{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+      color: rgba(103, 105, 104, 1);
+
+    }
+    .panel-group .panel {
+        border-radius: 0;
+        box-shadow: none;
+        border-color: #EEEEEE;
+        border: none;
+        background-color: white;
+    }
+
+    .panel-default > .panel-heading {
+        padding: 0;
+        border-radius: 0;
+        color: #212121;
+        background-color: white;
+        border: none;
+    }
+
+    .panel-title {
+        font-size: 14px;
+    }
+
+    .panel-title > a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    .more-less {
+        float: right;
+        color: #090909;
+    }
+
+    .panel-default > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #EEEEEE;
+    }
+    .active-panel-heading {
+      color: rgba(44, 160, 104, 1) !important;
+    }
+
+    .active-panel-heading .more-less {
+      color: rgba(44, 160, 104, 1);
+    }
+    @media (max-width: 767px) {
+      
+      .tab-buttoninner {
+        width: 150px; /* Reduce the button width */
+        font-size: 14px; /* Reduce the font size */
+        margin-top: 20px; /* Adjust margin */
+        text-align: center !important;
+      }
+      .tab-buttoninner-mobile {
+        text-align: center;
+        background: linear-gradient(90deg, #248B97 0%, #2CA068 100%);
+        width: 202px;
+        height: 36px;
+        gap: 0px;
+        border-radius: 8px;
+        opacity: 0px;
+        border: none;
+        font-family: 'Source Sans Pro',sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20.11px;
+        color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px !important;
+        margin: auto;
+      }
+      .panel-title p{
+        font-family: 'Source Sans Pro',sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20.11px;
+        text-align: left;
+      }
+      .panel-body p{
+        font-family: 'Source Sans Pro',sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        color: rgba(103, 105, 104, 1);
+        margin-bottom: 20px;
+      }
+      .App-Development-header2 p{
+        display: none;
+      }
+      .App-Development-header2{
+        margin-bottom: 25px;
+      }
+      .App-Development-header2 h2{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 40.22px;
+        text-align: left;
+      }
+      .App-Development-header2 span{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 40.22px;
+        text-align: left;
+      }
+      .App-Development-header2 img{
+        width: 28px;
+        height: 3px;
+        gap: 0px;
+        border-radius: 50px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="Mobile-App-Development-maindiv2">
+  <div class="App-Development-header2">
+  <h2>Mobile App Development <span>Services <img src="./MobileApp Image/Rectangle 81.png"/></span></h2>
+  <p>Custom web development is a unique service that ClickBox Agency provides. We make digital solutions that fit the specific wants and goals of each client. Custom web creation, on the other hand, means making websites and apps from scratch, making sure they fit the client's needs exactly. We are great at making custom web solutions.</p>
+  </div>
+
+  <div class="panel-group  visible-xs" id="accordion" role="tablist" aria-multiselectable="true">
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="more-less glyphicon glyphicon-plus"></i>
+                    <p>WordPress</p>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-6">
+                <p>Custom web development is a unique service that ClickBox Agency provides. We make digital solutions that fit the specific wants and goals of each client. Custom web creation, on the other hand, means making websites and apps from scratch, making sure they fit the client's needs exactly. We are great at making custom web solutions that fit the brand identity, business methods, and goals for the user experience of the client. We include clients in all stages of growth, from coming up with ideas to putting them into action, through a collaborative process.</p>
+              </div>
+              <div class="col-md-6">
+                <img src="./MobileApp Image/Mobile App Development Service.png" alt="WordPress Image" class="img-responsive">
+              </div>
+              <button class="tab-buttoninner-mobile">Discover Our Service</button>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="more-less glyphicon glyphicon-plus"></i>
+                    <p>Customer Web Services</p>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-6">
+                <p>Custom web development is a unique service that ClickBox Agency provides. We make digital solutions that fit the specific wants and goals of each client. Custom web creation, on the other hand, means making websites and apps from scratch, making sure they fit the client's needs exactly. We are great at making custom web solutions that fit the brand identity, business methods, and goals for the user experience of the client. We include clients in all stages of growth, from coming up with ideas to putting them into action, through a collaborative process.</p>
+              </div>
+              <div class="col-md-6">
+                <img src="./MobileApp Image/Mobile App Development Service.png" alt="WordPress Image" class="img-responsive">
+              </div>
+              <button class="tab-buttoninner-mobile">Discover Our Service</button>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="more-less glyphicon glyphicon-plus"></i>
+                    <p>PHP</p>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-6">
+                <p>Custom web development is a unique service that ClickBox Agency provides. We make digital solutions that fit the specific wants and goals of each client. Custom web creation, on the other hand, means making websites and apps from scratch, making sure they fit the client's needs exactly. We are great at making custom web solutions that fit the brand identity, business methods, and goals for the user experience of the client. We include  clients in all stages of growth, from coming up with ideas to putting them into action, through a collaborative process.</p>
+                
+              </div>
+              <div class="col-md-6">
+                <img src="./MobileApp Image/Mobile App Development Service.png" alt="WordPress Image" class="img-responsive">
+              </div>
+              <button class="tab-buttoninner-mobile">Discover Our Service</button>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+      <!-- Panel 4 heading -->
+      <div class="panel-heading" role="tab" id="headingFour">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <i class="more-less glyphicon glyphicon-plus"></i>
+            <p>Ecommerce Website</p>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-6">
+              <p>Custom web development is a unique service that ClickBox Agency provides. We make digital solutions that fit the specific wants and goals of each client. Custom web creation, on the other hand, means making websites and apps from scratch, making sure they fit the client's needs exactly. We are great at making custom web solutions that fit the brand identity, business methods, and goals for the user experience of the client. We include  clients in all stages of growth, from coming up with ideas to putting them into action, through a collaborative process.</p>
+              
+            </div>
+            <div class="col-md-6">
+              <img src="./MobileApp Image/Mobile App Development Service.png" alt="WordPress Image" class="img-responsive">
+            </div>
+            <button class="tab-buttoninner-mobile">Discover Our Service</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <!-- Panel 5 heading -->
+      <div class="panel-heading" role="tab" id="headingFive">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <i class="more-less glyphicon glyphicon-plus"></i>
+            <p>Shopify Website</p>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-6">
+              <p>Custom web development is a unique service that ClickBox Agency provides. We make digital solutions that fit the specific wants and goals of each client. Custom web creation, on the other hand, means making websites and apps from scratch, making sure they fit the client's needs exactly. We are great at making custom web solutions that fit the brand identity, business methods, and goals for the user experience of the client. We include  clients in all stages of growth, from coming up with ideas to putting them into action, through a collaborative process.</p>
+              
+            </div>
+            <div class="col-md-6">
+              <img src="./MobileApp Image/Mobile App Development Service.png" alt="WordPress Image" class="img-responsive">
+            </div>
+            <button class="tab-buttoninner-mobile">Discover Our Service</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <!-- Panel 6 heading -->
+      <div class="panel-heading" role="tab" id="headingSix">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            <i class="more-less glyphicon glyphicon-plus"></i>
+            <p>CMS</p>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-6">
+              <p>Custom web development is a unique service that ClickBox Agency provides. We make digital solutions that fit the specific wants and goals of each client. Custom web creation, on the other hand, means making websites and apps from scratch, making sure they fit the client's needs exactly. We are great at making custom web solutions that fit the brand identity, business methods, and goals for the user experience of the client. We include  clients in all stages of growth, from coming up with ideas to putting them into action, through a collaborative process.</p>
+              
+            </div>
+            <div class="col-md-6">
+              <img src="./MobileApp Image/Mobile App Development Service.png" alt="WordPress Image" class="img-responsive">
+            </div>
+            <button class="tab-buttoninner-mobile">Discover Our Service</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <!-- Panel 7 heading -->
+      <div class="panel-heading" role="tab" id="headingSeven">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            <i class="more-less glyphicon glyphicon-plus"></i>
+            <p>Magento Website</p>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-6">
+              <p>Custom web development is a unique service that ClickBox Agency provides. We make digital solutions that fit the specific wants and goals of each client. Custom web creation, on the other hand, means making websites and apps from scratch, making sure they fit the client's needs exactly. We are great at making custom web solutions that fit the brand identity, business methods, and goals for the user experience of the client. We include  clients in all stages of growth, from coming up with ideas to putting them into action, through a collaborative process.</p>
+              
+            </div>
+            <div class="col-md-6">
+              <img src="./MobileApp Image/Mobile App Development Service.png" alt="WordPress Image" class="img-responsive">
+            </div>
+            <button class="tab-buttoninner-mobile">Discover Our Service</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <!-- Panel 8 heading -->
+      <div class="panel-heading" role="tab" id="headingEight">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            <i class="more-less glyphicon glyphicon-plus"></i>
+            <p>Joomla Website</p>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-6">
+              <p>Custom web development is a unique service that ClickBox Agency provides. We make digital solutions that fit the specific wants and goals of each client. Custom web creation, on the other hand, means making websites and apps from scratch, making sure they fit the client's needs exactly. We are great at making custom web solutions that fit the brand identity, business methods, and goals for the user experience of the client. We include  clients in all stages of growth, from coming up with ideas to putting them into action, through a collaborative process.</p>
+              
+            </div>
+            <div class="col-md-6">
+              <img src="./MobileApp Image/Mobile App Development Service.png" alt="WordPress Image" class="img-responsive">
+            </div>
+            <button class="tab-buttoninner-mobile">Discover Our Service</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
+  <div class="row hidden-xs" >
+    <div class="col-xs-9">
+      <ul class="nav nav-tabs">
+        <li><a href="#" onclick="previousTab()" id="prevTabBtn"><i class="fas fa-chevron-left"></i></a></li>
+        <li class="active"><a class="tab-label" data-toggle="tab" href="#WordPress" onclick="tabClicked('WordPress')">WordPress</a></li>
+        <li><a class="tab-label" data-toggle="tab" href="#CustomerWebServices" onclick="tabClicked('Customer Web Services')">Customer Web Service</a></li>
+        <li><a class="tab-label" data-toggle="tab" href="#PHP" onclick="tabClicked('PHP')">PHP</a></li>
+        <li><a class="tab-label" data-toggle="tab" href="#EcommerceWebsite" onclick="tabClicked('Ecommerce Website')">Ecommerce Website</a></li>
+        <li><a class="tab-label" data-toggle="tab" href="#ShopifyWebsite" onclick="tabClicked('Shopify Website')">Shopify Website</a></li>
+
+        <li><a href="#" onclick="nextTab()" id="nextTabBtn"><i class="fas fa-chevron-right"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tab-content hidden-xs" >
+    <div id="WordPress" class="tab-pane fade in active ">
+      <div class="row ">
+        <div class="col-md-6">
+          <p>Custom web development is a unique service that ClickBox Agency provides. We make digital solutions that fit the specific wants and goals of each client. Custom web creation, on the other hand, means making websites and apps from scratch, making sure they fit the client's needs exactly. We are great at making custom web solutions that fit the brand identity, business methods, and goals for the user experience of the client.We include clients in all stages of growth, from coming up with ideas to putting them into action, through a collaborative process.</p>
+          <button class="tab-buttoninner">Discover Our Service</button>
+        </div>
+        <div class="col-md-6">
+          <img src="./MobileApp Image/Mobile App Development Service.png" alt="WordPress Image">
+        </div>
+      </div>
+    </div>
+    <div id="CustomerWebServices" class="tab-pane fade">
+      <div class="row">
+        <div class="col-md-6">
+          <p>Custom web development is a unique service that ClickBox Agency provides. We make digital solutions that fit the specific wants and goals of each client. Custom web creation, on the other hand, means making websites and apps from scratch, making sure they fit the client's needs exactly. We are great at making custom web solutions that fit the brand identity, business methods, and goals for the user experience of the client. We include clients in all stages of growth, from coming up with ideas to putting them into action, through a collaborative process.</p>
+          
+          <button class="tab-buttoninner">Discover Our Service</button>
+        </div>
+        <div class="col-md-6">
+          <img src="./MobileApp Image/Mobile App Development Service.png" alt="Customer Web Services Image">
+        </div>
+        
+         
+       
+      </div>
+    </div>
+    <div id="PHP" class="tab-pane fade">
+      <div class="row">
+        <div class="col-md-6">
+          <p>Custom web development is a unique service that ClickBox Agency provides. We make digital solutions that fit the specific wants and goals of each client. Custom web creation, on the other hand, means making websites and apps from scratch, making sure they fit the client's needs exactly. We are great at making custom web solutions that fit the brand identity, business methods, and goals for the user experience of the client. We include clients in all stages of growth, from coming up with ideas to putting them into action, through a collaborative process.</p>
+          <button class="tab-buttoninner">Discover Our Service</button>
+        </div>
+        <div class="col-md-6">
+          <img src="./MobileApp Image/Mobile App Development Service.png" alt="PHP Image">
+        </div>
+      </div>
+    </div>
+    <div id="EcommerceWebsite" class="tab-pane fade">
+      <div class="row">
+        <div class="col-md-6">
+          <p>Custom web development is a unique service that ClickBox Agency provides. We make digital solutions that fit the specific wants and goals of each client. Custom web creation, on the other hand, means making websites and apps from scratch, making sure they fit the client's needs exactly. We are great at making custom web solutions that fit the brand identity, business methods, and goals for the user experience of the client. We include clients in all stages of growth, from coming up with ideas to putting them into action, through a collaborative process.</p>
+          <button class="tab-buttoninner">Discover Our Service</button>
+        </div>
+        <div class="col-md-6">
+          <img src="./MobileApp Image/Mobile App Development Service.png" alt="Ecommerce Website Image">
+        </div>
+      </div>
+    </div>
+    <div id="ShopifyWebsite" class="tab-pane fade">
+      <div class="row">
+        <div class="col-md-6">
+          <p>Custom web development is a unique service that ClickBox Agency provides. We make digital solutions that fit the specific wants and goals of each client. Custom web creation, on the other hand, means making websites and apps from scratch, making sure they fit the client's needs exactly. We are great at making custom web solutions that fit the brand identity, business methods, and goals for the user experience of the client. We include clients in all stages of growth, from coming up with ideas to putting them into action, through a collaborative process.</p>
+          <button class="tab-buttoninner">Discover Our Service</button>
+        </div>
+        <div class="col-md-6">
+          <img src="./MobileApp Image/Mobile App Development Service.png" alt="Shopify Website Image">
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</div>
+
+<script>
+  function previousTab() {
+    var tabs = document.querySelectorAll('.nav-tabs > li > a');
+    for (var i = 0; i < tabs.length; i++) {
+      if (tabs[i].parentNode.classList.contains('active')) {
+        if (i > 1) {
+          tabs[i - 1].click();
+          updateIconColor(); // Update icon color
+          document.getElementById('nextTabBtn').removeAttribute('disabled'); // Enable next button
+          if (i === 2) {
+            document.getElementById('prevTabBtn').setAttribute('disabled', 'disabled'); // Disable previous button
+          }
+          break;
+        }
+      }
+    }
+  }
+
+  function nextTab() {
+    var tabs = document.querySelectorAll('.nav-tabs > li > a');
+    for (var i = 0; i < tabs.length; i++) {
+      if (tabs[i].parentNode.classList.contains('active')) {
+        if (i < tabs.length - 2) {
+          tabs[i + 1].click();
+          updateIconColor(); // Update icon color
+          document.getElementById('prevTabBtn').removeAttribute('disabled'); // Enable previous button
+          if (i === tabs.length - 3) {
+            document.getElementById('nextTabBtn').setAttribute('disabled', 'disabled'); // Disable next button
+          }
+          break;
+        }
+      }
+    }
+  }
+
+  function updateIconColor() {
+    var prevBtn = document.getElementById('prevTabBtn').querySelector('i');
+    var nextBtn = document.getElementById('nextTabBtn').querySelector('i');
+    prevBtn.classList.remove('icon-black');
+    nextBtn.classList.remove('icon-black');
+    prevBtn.classList.add('icon-black');
+    nextBtn.classList.add('icon-black');
+  }
+
+
+  function toggleIconAndColor(e) {
+  $(e.target)
+    .prev('.panel-heading')
+    .toggleClass('active-panel-heading'); // toggle the active class
+  $(e.target)
+    .prev('.panel-heading')
+    .find(".more-less")
+    .toggleClass('glyphicon-plus glyphicon-minus'); // toggle the icon class
+}
+
+$('.panel-group').on('hidden.bs.collapse', toggleIconAndColor);
+$('.panel-group').on('shown.bs.collapse', toggleIconAndColor);
+
+</script>
+
+</body>
+</html>
