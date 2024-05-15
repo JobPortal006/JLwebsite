@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <style>
     /* Navbar button styles */
 
@@ -36,10 +37,11 @@
     .carousel-control-next-icon {
         background-color: white;
     }
-</style>
-<style>
 
 
+    .bold-text {
+  font-weight: bold;
+}
 </style>
 
 <body>
@@ -48,17 +50,17 @@
         style="background-color: white; height: auto; box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05); margin-bottom: 1px !important;">
         <div class="container">
             <a class="navbar-brand" href="#" style="padding: 0;">
-                <img src="./aboutImages/Logo.png" alt="Logo" class="nav-logo">
+                <img src="./images/Logo.png" alt="Logo" class="nav-logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" style="border: none;"></span>
             </button>
-            <!-- Sidebar -->
+
             <div class="sidebar">
                 <div class="sidebar-header">
                     <a class="navbar-brand" href="#" style="padding: 0;">
-                        <img src="./aboutImages/Logo.png" alt="Logo" class="nav-logo-sidebar">
+                        <img src="./images/Logo.png" alt="Logo" class="nav-logo-sidebar">
                     </a>
                     <span class="cancel-icon" onclick="closeSidebar()">&times;</span>
                 </div>
@@ -123,16 +125,18 @@
 
                     <li class="nav-item" style="margin-top: -20px !important;">
                         <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-                            onclick="toggleDropdown('Portfolios')">Portfolios <i id="services-icon"
-                                class="fas bi-chevron-down"></i></a>
-                        <div id="Portfolios-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownPortfolios"
+                            onclick="toggleDropdown('Portfolios')">Portfolios
+                             <!-- <i id="services-icon"
+                                class="fas bi-chevron-down"></i> -->
+                            </a>
+                        <!-- <div id="Portfolios-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownPortfolios"
                             style="display: none;">
                             <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
                             <a class="dropdown-item" href="#">Home</a>
                             <a class="dropdown-item" href="#">Management</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Product</a>
-                        </div>
+                        </div> -->
                     </li>
                     <hr class="footer-line" style="margin-top: 0px !important;">
                     <li class="nav-item">
@@ -140,10 +144,9 @@
                                 Touch</button></a>
                     </li>
 
-                    <!-- Add other dropdown items -->
                 </ul>
             </div>
-            <!-- End Sidebar -->
+
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto"
                     style="font-weight: 400; font-family: 'Source Sans Pro', sans-serif; gap: 10px !important;">
@@ -202,16 +205,16 @@
                             <a class="dropdown-item" href="#">Product</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" role="button"
+                    <li class="nav-item dropdown" style="margin-top: 1px !important; color: #676968 !important;">
+                        <a class="nav-link dropdown-togglee" href="#" id="navbarDropdownPortfolio" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+                        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
                             <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
                             <a class="dropdown-item" href="#">Home</a>
                             <a class="dropdown-item" href="#">Management</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Product</a>
-                        </div>
+                        </div> -->
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><button type="button" class="navbar_button">Get in
@@ -262,7 +265,7 @@
     <!-- nav bar end-->
     <!-- hero section -->
 
-<!-- 
+
     <div class="container">
         <div class="retail-main-div">
             <div class="row">
@@ -287,46 +290,47 @@
             </div>
 
         </div>
-    </div> -->
+    </div>
     <!-- hero section end-->
+
+
     <!-- software solution section -->
 
-    <!-- scope  -->
-<!-- 
     <div class="container">
         <div class="software-solutions">
             <h2 class="software-solutions-header">Retail & eCommerce <span
                     class="software-solutions-header-span">Software Solutions</span></h2>
-            <div class="row">
-                <div class="col" id="first-column">
+            <div class="row ">
+                <div class="col-md-5" id="first-column">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-md-12 scrollable-container">
                             <div class="card default-card software-card selected" onclick="showText(1)" id="card1"
                                 data-card="1">
                                 <div class="card-body">
                                     <p class="card-text">Delivery Solution</p>
                                 </div>
                             </div>
-                            <div class="card software-card" onclick="showText(2)" id="card2" data-card="2">
+                            <div class="card software-card card-adjustment" onclick="showText(2)" id="card2"
+                                data-card="2">
                                 <div class="card-body">
                                     <p class="card-text">B2C E-Commerce Platform</p>
                                 </div>
                             </div>
-                            <div class="card software-card" onclick="showText(3)" id="card3" data-card="3">
+                            <div class="card software-card card-adjustment2" onclick="showText(3)" id="card3"
+                                data-card="3">
                                 <div class="card-body">
                                     <p class="card-text">Multi-Vendor Platform</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col software-solutions-top-col">
                             <div class="card software-card" onclick="showText(4)" id="card4" data-card="4">
                                 <div class="card-body">
                                     <p class="card-text">Retail ERP Software</p>
                                 </div>
                             </div>
-                            <div class="card software-card" onclick="showText(5)" id="card5" data-card="5">
+                            <div class="card software-card card-adjustment2" onclick="showText(5)" id="card5"
+                                data-card="5">
                                 <div class="card-body">
-                                    <p class="card-text">Purchase Customized Product</p>
+                                    <p class="card-text">Purchase Product</p>
                                 </div>
                             </div>
                             <div class="card software-card" onclick="showText(6)" id="card6" data-card="6">
@@ -338,7 +342,9 @@
                     </div>
                 </div>
 
-                <div class="col" id="second-column">
+
+
+                <div class="col-md-7" id="second-column">
                     <div id="content-1" style="display: block;">
                         <h1 class="software-solutions-content-header"> Delivery Solution</h1>
                         <p class="software-solutions-content-header-discription">ERP is a Business Management Solution
@@ -552,9 +558,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
 
                     </div>
 
@@ -1007,7 +1010,9 @@
 
         </div>
 
-    </div> -->
+    </div>
+
+
 
     <script>
         function showText(cardNumber) {
@@ -1100,9 +1105,11 @@
         }
     </script>
 
-    <!-- software solutions section end-->
 
-<!-- 
+    <!-- software solutions section end-->
+    <!-- scope  -->
+
+
     <div class="scope-top-div">
         <div class="container ">
             <h2 class="scope-header">
@@ -1114,7 +1121,7 @@
                     <img src="./images/scope mobile.png" alt="scope" class="img-fluid  scopemobile-image">
 
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 " style="padding-bottom: 50px !important;">
                     <div id="accordion">
                         <div class="card scope-main-card">
                             <div class="card scope-card">
@@ -1128,8 +1135,8 @@
 
                                 </div>
 
-                                <div id="collapseOne" class="collapse show scope-card-body" aria-labelledby="headingOne"
-                                    data-parent="#accordion">
+                                <div id="collapseOne" class="collapse  show scope-card-body"
+                                    aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body scope-card-content">
                                         Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed
                                         modi
@@ -1217,9 +1224,9 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
-
+    <!-- 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const headings = document.querySelectorAll('.scope-card-header');
@@ -1273,18 +1280,89 @@
             }
         });
 
-    </script>
+    </script> -->
+
+
+
+<!-- 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    var accordions = document.querySelectorAll('.scope-card-header');
+    accordions.forEach(function (accordion) {
+        // Check if the card is initially open
+        var isOpen = accordion.getAttribute('aria-expanded') === 'true';
+        var chevron = accordion.querySelector('.scope-icon');
+        
+        // Toggle the icon based on the initial state
+        chevron.classList.toggle('bi-chevron-up', isOpen);
+        chevron.classList.toggle('bi-chevron-down', !isOpen);
+        
+        accordion.addEventListener('click', function () {
+            var isCollapsed = accordion.getAttribute('aria-expanded') === 'true';
+            
+            // Toggle all icons to down initially
+            accordions.forEach(function (acc) {
+                var icon = acc.querySelector('.scope-icon');
+                icon.classList.remove('bi-chevron-up');
+                icon.classList.add('bi-chevron-down');
+            });
+            
+            // Toggle the clicked icon accordingly
+            chevron.classList.toggle('bi-chevron-up', !isCollapsed);
+            chevron.classList.toggle('bi-chevron-down', isCollapsed);
+        });
+    });
+});
+
+    </script> -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    var accordions = document.querySelectorAll('.scope-card-header');
+    accordions.forEach(function (accordion) {
+        // Check if the card is initially open
+        var isOpen = accordion.getAttribute('aria-expanded') === 'true';
+        var chevron = accordion.querySelector('.scope-icon');
+        var headerText = accordion.querySelector('.scope-card-header-text');
+        
+        // Toggle the icon based on the initial state
+        chevron.classList.toggle('bi-chevron-up', isOpen);
+        chevron.classList.toggle('bi-chevron-down', !isOpen);
+        
+        // Toggle the bold text class based on the initial state
+        headerText.classList.toggle('bold-text', isOpen);
+        
+        accordion.addEventListener('click', function () {
+            var isCollapsed = accordion.getAttribute('aria-expanded') === 'true';
+            
+            // Toggle all icons to down initially
+            accordions.forEach(function (acc) {
+                var icon = acc.querySelector('.scope-icon');
+                icon.classList.remove('bi-chevron-up');
+                icon.classList.add('bi-chevron-down');
+            });
+            
+            // Toggle the clicked icon accordingly
+            chevron.classList.toggle('bi-chevron-up', !isCollapsed);
+            chevron.classList.toggle('bi-chevron-down', isCollapsed);
+            
+            // Toggle the bold text class accordingly
+            headerText.classList.toggle('bold-text', !isCollapsed);
+        });
+    });
+});
+
+</script>
 
     <!-- Expertise -->
-  
-<!-- 
-    <div class="container">
-        <div style="margin-top: 30px  ;">
+
+
+    <div class="container" >
+        <div class="Expertise-top-div">
             <h2 class="Expertise-header">Our Retail & eCommerce <span class="Expertise-header-span">Expertise </span>
             </h2>
             <div class="Expertise-maindiv">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card expertise-card">
                             <div class="card-body">
                                 <h5 class="Expertise-card-title"> AI-driven Capabilities</h5>
@@ -1295,7 +1373,7 @@
                         </div>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card expertise-card">
                             <div class="card-body">
                                 <h5 class="Expertise-card-title">AR & VR </h5>
@@ -1308,7 +1386,7 @@
                         </div>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card expertise-card">
                             <div class="card-body">
                                 <h5 class="Expertise-card-title">IoT-Enabled eCommerce</h5>
@@ -1323,7 +1401,7 @@
 
 
 
-                    <div class="col-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card expertise-card">
                             <div class="card-body">
                                 <h5 class="Expertise-card-title">RPA-Enabled eCommerce</h5>
@@ -1334,7 +1412,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card expertise-card">
                             <div class="card-body">
                                 <h5 class="Expertise-card-title"> Blockchain Technology</h5>
@@ -1345,7 +1423,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card expertise-card">
                             <div class="card-body">
                                 <h5 class="Expertise-card-title"> Compliance</h5>
@@ -1359,7 +1437,9 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
+
+
     <!-- Expertise section end-->
 
     <!-- development -->
@@ -1369,7 +1449,7 @@
 
         <div class="row">
             <h2 class="development-header">
-                Why Choose our <span class="development-header-span"> Retail & <br>
+                Why Choose our <span class="development-header-span"> Retail & 
                     eCommerce Development</span>
             </h2>
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
@@ -1382,74 +1462,74 @@
                     solutions that meet and exceed your expectations, ensuring your retail or eCommerce business stays
                     ahead in the competitive market.
                 </p>
-                <img src="./images/development.png" class="img-fluid development-img-mobile" >
+                <img src="./images/development.png" class="img-fluid development-img-mobile">
 
                 <div class="development-row">
                     <div class="development-col">
                         <img src="./images/tick.png" alt="tick" class="development-img">
-                        <p>India’s Top 1% Software Talent</p>
+                        <p class="development-para">India’s Top 1% Software Talent</p>
                     </div>
                     <div class="development-col">
                         <img src="./images/tick.png" alt="tick" class="development-img">
-                        <p>Trusted by Startups to Fortune 500</p>
+                        <p class="development-para">Trusted by Startups to Fortune 500</p>
                     </div>
                 </div>
                 <div class="development-row">
                     <div class="development-col">
                         <img src="./images/tick.png" alt="tick" class="development-img">
-                        <p>Idea to Deployment, We Handle All</p>
+                        <p class="development-para">Idea to Deployment, We Handle All</p>
                     </div>
                     <div class="development-col">
                         <img src="./images/tick.png" alt="tick" class="development-img">
-                        <p>Time-Zone Friendly:Global Presence</p>
+                        <p class="development-para">Time-Zone Friendly:Global Presence</p>
                     </div>
                 </div>
 
                 <div class="development-row">
                     <div class="development-col">
                         <img src="./images/tick.png" alt="tick" class="development-img">
-                        <p>Top-tier Data Security Protocols</p>
+                        <p class="development-para">Top-tier Data Security Protocols</p>
                     </div>
                     <div class="development-col">
                         <img src="./images/tick.png" alt="tick" class="development-img">
-                        <p>On-time Delivery, No Surprises</p>
+                        <p class="development-para">On-time Delivery, No Surprises</p>
                     </div>
                 </div>
 
 
 
 
-                
 
-                <div class=" mobile development-row row">
+
+                <div class=" mobile development-row development-rowone row ">
                     <div class="development-col col-12">
                         <img src="./images/tick.png" alt="tick" class="development-img">
-                        <p>India’s Top 1% Software Talent</p>
+                        <p class="development-para">India’s Top 1% Software Talent</p>
                     </div>
                     <div class="development-col col-12">
                         <img src="./images/tick.png" alt="tick" class="development-img">
-                        <p>Trusted by Startups to Fortune 500</p>
+                        <p class="development-para">Trusted by Startups to Fortune 500</p>
                     </div>
                 </div>
                 <div class=" mobile development-row row">
                     <div class="development-col col-12">
                         <img src="./images/tick.png" alt="tick" class="development-img">
-                        <p>Idea to Deployment, We Handle All</p>
+                        <p class="development-para">Idea to Deployment, We Handle All</p>
                     </div>
                     <div class="development-col col-12">
                         <img src="./images/tick.png" alt="tick" class="development-img">
-                        <p>Time-Zone Friendly:Global Presence</p>
+                        <p class="development-para">Time-Zone Friendly:Global Presence</p>
                     </div>
                 </div>
 
                 <div class=" mobile development-row row">
                     <div class="development-col col-12">
                         <img src="./images/tick.png" alt="tick" class="development-img">
-                        <p>Top-tier Data Security Protocols</p>
+                        <p class="development-para">Top-tier Data Security Protocols</p>
                     </div>
                     <div class="development-col col-12">
                         <img src="./images/tick.png" alt="tick" class="development-img">
-                        <p>On-time Delivery, No Surprises</p>
+                        <p class="development-para">On-time Delivery, No Surprises</p>
                     </div>
                 </div>
 
@@ -1464,101 +1544,88 @@
     <!-- development section end-->
 
     <!-- benefits -->
-<!-- 
+
+
+
     <div class="container benefits-container">
-        <h2 class="benefits-header"> Retail & Ecommerce <span class="benefits-header-span"> Software Development
-                Benefits </span> </h2>
-        <div class="container">
+        <h2 class="benefits-header">Retail & Ecommerce <span class="benefits-header-span">Software Development
+                Benefits</span></h2>
+        <div class="container benefits-container2">
             <div class="row benefits-row">
-                <div class="col-6">
+                <div class="col-md-6">
 
                     <div class="row">
-                        <div class="col-sm-1">
-                            <img src="./images/tick.png" alt="tick" class="benefits-img">
-
+                        <div class="col-3 col-sm-1">
+                            <img src="./images/tick.png" alt="tick" class="benefits-img ">
                         </div>
-                        <div class="col-sm-11">
-                            <p class="benefits-col-header">Greater
-                                visibility</p>
-                            <p class="benefits-col-discription">Only an integrated cloud-based
-                                security stack is capable of providing the centralized visibility of cloud
-                                resources and data that is vital for defending against breaches and other
-                                potential threats. </p>
+                        <div class="col-9 col-sm-11 benefits-col-mobile">
+                            <p class="benefits-col-header">Greater visibility</p>
+                            <p class="benefits-col-discription">Only an integrated cloud-based security stack is capable
+                                of providing the centralized visibility of cloud resources and data that is vital for
+                                defending against breaches and other potential threats.</p>
                         </div>
                     </div>
 
-
                     <div class="row">
-                        <div class="col-sm-1">
-                            <img src="./images/tick.png" alt="tick" class="benefits-img">
-
+                        <div class="col-3 col-sm-1">
+                            <img src="./images/tick.png" alt="tick" class="benefits-img ">
                         </div>
-                        <div class="col-sm-11">
-                            <p class="benefits-col-header">
-                                Centralized security</p>
+                        <div class="col-9 col-sm-11 benefits-col-mobile">
+                            <p class="benefits-col-header">Centralized security</p>
                             <p class="benefits-col-discription">Cloud security allows you to consolidate protection of
                                 cloud-based networks for streamlined, continuous monitoring and analysis of numerous
-                                devices, endpoints, and systems. </p>
+                                devices, endpoints, and systems.</p>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-sm-1">
-                            <img src="./images/tick.png" alt="tick" class="benefits-img">
-
+                        <div class="col-3 col-sm-1">
+                            <img src="./images/tick.png" alt="tick" class="benefits-img ">
                         </div>
-                        <div class="col-sm-11">
-                            <p class="benefits-col-header">Data protection
-                            </p>
+                        <div class="col-9 col-sm-11 benefits-col-mobile">
+                            <p class="benefits-col-header">Data protection</p>
                             <p class="benefits-col-discription">The best cloud computing providers will provide data
                                 security by design, offering strong access controls, encryption for data at rest and in
-                                transit, and data loss prevention. </p>
+                                transit, and data loss prevention.</p>
                         </div>
                     </div>
 
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
 
                     <div class="row">
-                        <div class="col-sm-1">
-                            <img src="./images/tick.png" alt="tick" class="benefits-img">
-
+                        <div class="col-3 col-sm-1">
+                            <img src="./images/tick.png" alt="tick" class="benefits-img ">
                         </div>
-                        <div class="col-sm-11">
-                            <p class="benefits-col-header">Reduced costs
-                            </p>
+                        <div class="col-9 col-sm-11 benefits-col-mobile">
+                            <p class="benefits-col-header">Reduced costs</p>
                             <p class="benefits-col-discription">With cloud security, you don’t have to pay for dedicated
                                 hardware to upgrade your security or use valuable resources to handle security updates
-                                and configurations. </p>
+                                and configurations.</p>
                         </div>
                     </div>
 
-
                     <div class="row">
-                        <div class="col-sm-1">
-                            <img src="./images/tick.png" alt="tick" class="benefits-img">
-
+                        <div class="col-3 col-sm-1">
+                            <img src="./images/tick.png" alt="tick" class="benefits-img ">
                         </div>
-                        <div class="col-sm-11">
-                            <p class="benefits-col-header">Cloud compliance
-                            </p>
+                        <div class="col-9 col-sm-11 benefits-col-mobile">
+                            <p class="benefits-col-header">Cloud compliance</p>
                             <p class="benefits-col-discription">Cloud providers go to great lengths to comply with both
                                 international and industry compliance standards, often undergoing rigorous independent
-                                verifications of their security, privacy, and compliance controls. </p>
+                                verifications of their security, privacy, and compliance controls.</p>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-sm-1">
-                            <img src="./images/tick.png" alt="tick" class="benefits-img">
-
+                        <div class="col-3 col-sm-1">
+                            <img src="./images/tick.png" alt="tick" class="benefits-img ">
                         </div>
-                        <div class="col-sm-11">
-                            <p class="benefits-col-header">Advanced threat detection
-                            </p>
+                        <div class="col-9 col-sm-11 benefits-col-mobile">
+                            <p class="benefits-col-header">Advanced threat detection</p>
                             <p class="benefits-col-discription">Reputable CSPs also invest in cutting-edge technologies
                                 and highly skilled experts to provide real–time global threat intelligence that can
-                                detect both known and unknown threats. </p>
+                                detect both known and unknown threats.</p>
                         </div>
                     </div>
 
@@ -1566,53 +1633,57 @@
 
             </div>
         </div>
-    </div> -->
+    </div>
+
 
     <!-- benefits  section end-->
     <!-- client -->
-<!-- 
+
     <div class="client-main-div">
         <div class="container">
             <div class="row client-row">
-                <div class="col client-col1">
+                <div class="col-md-6 col-12 client-col1">
                     <h2 class="client-header">What Our <br>
                         <span class="client-header-span">Valuable Client Says </span>
                     </h2>
                 </div>
 
-                <div class="col client-col2">
+                <div class="col-md-6 col-12 client-col2">
                     <div class="card client-card">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
-                                    <div class="row client-row1">
-                                        <div class="col-md-1">
+                                    <div class="row client-row1 align-items-center">
+                                        <div class="col-auto pr-0">
                                             <img src="./images/p1.png" alt="tick" class="client-img">
                                         </div>
-                                        <div class="col-md-11">
-                                            <p class="client-card-profilename">Joseph Franklo</p>
+                                        <div class="col">
+                                            <p class="client-card-profilename mb-0">Joseph Franklo</p>
                                             <p class="client-card-profile-discriiption">Director, Techinsiration LLC</p>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <p class="client-discription">“Justlogix has been able to ramp up their teams
-                                            to meet our needs, new development initiatives. The code they
-                                            delivered was of high quality, and overall, the communication was very
-                                            good.”
-                                        </p>
+                                        <div class="container">
+                                            <p class="client-discription">“Justlogix has been able to ramp up their
+                                                teams
+                                                to meet our needs, new development initiatives. The code they
+                                                delivered was of high quality, and overall, the communication was very
+                                                good.”
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="client-arrow">
-                        <img src="./images/leftarrow.png" class="client-arrow1" onclick="showPreviousProfile()">
-                        <img src="./images/rightarrow.png" class="client-arrow2" onclick="showNextProfile()">
+                        <img src="./images/leftarrow_lite.png" class="client-arrow1" onclick="showPreviousProfile()">
+                        <img src="./images/rightarrow_dark.png" class="client-arrow2" onclick="showNextProfile()">
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <script>
         // Array to store profiles
@@ -1626,7 +1697,7 @@
             {
                 name: "Joseph Franklo 1",
                 designation: "Director, Techinsiration LLC 1",
-                description: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ipsam nam mollitia, itaque at iure dolor quos.Ad nisi recusandae eaque magnam natus reiciendis consequuntur, accusamus animi, laborum, enim suscipit",
+                description: "Justlogix has been able to ramp up their teams to meet our needs, new development initiatives. The code they delivered was of high quality, and overall, the communication was very good.",
                 image: "./images/p1.png"
             },
             {
@@ -1634,7 +1705,7 @@
                 designation: "Director, Techinsiration LLC 2",
                 description: "Justlogix has been able to ramp up their teams to meet our needs, new development initiatives. The code they delivered was of high quality, and overall, the communication was very good.",
                 image: "./images/p1.png"
-            },
+            }
             // Add more profiles in the same format
         ];
 
@@ -1668,6 +1739,21 @@
                 document.querySelector(".client-card-profile-discriiption").innerText = profile.designation;
                 document.querySelector(".client-discription").innerText = profile.description;
                 document.querySelector(".client-img").src = profile.image;
+
+                // Change arrow images based on availability of previous or next profiles
+                var prevArrow = document.querySelector(".client-arrow1");
+                var nextArrow = document.querySelector(".client-arrow2");
+                if (currentIndex === 0) {
+                    prevArrow.src = "./images/leftarrow_lite.png";
+                } else {
+                    prevArrow.src = "./images/leftarrow_dark.png";
+                }
+                if (currentIndex === profiles.length - 1) {
+                    nextArrow.src = "./images/rightarrow_lite.png";
+                } else {
+                    nextArrow.src = "./images/rightarrow_dark.png";
+                }
+
                 card.classList.add("fade-in"); // Add fadeIn class to smoothly fade in
             }, 500);
 
@@ -1682,22 +1768,65 @@
     </script>
 
 
-
     <!-- client  section end-->
 
     <!-- platform -->
 
-
-    <!-- <div class="platform-mainidv">
+    <div class="platform-mainidv">
         <div class="container">
             <h2 class="platform-header">
                 Retail and E-commerce <span class="platform-header-span"> Platforms We Work With </span>
             </h2>
             <div class="row">
-                <div class="col">
+                <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
                     <img src="./images/platform.png" alt="platform img" class="platform-img1">
-                </div>
-                <div class="col">
+                    <img src="./images/platformMobile.png" alt="platform img" class="platform-imgM img-fluid">
+
+                </div> -->
+                <div class="col-lg-6 col-md-6 col-sm-12 platform-maincol " >
+                    <div class="Development-Technologies-col1 ">
+                      <div class="row">
+                        <!-- Image 1 -->
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 d-flex justify-content-center align-items-center image-column">
+                          <img src="./images/salesforce.png" alt="salesforce" class="img-fluid">
+                        </div>
+                      
+                        <!-- Image 2 -->
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 d-flex justify-content-center align-items-center image-column">
+                          <img src="./images/magento.png" alt="magento" class="img-fluid">
+                        </div>
+                        <!-- Image 3 -->
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 d-flex justify-content-center align-items-center image-column">
+                          <img src="./images/drupal.png" alt="drupal" class="img-fluid">
+                        </div>
+                        <!-- Image 4 -->
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 d-flex justify-content-center align-items-center image-column">
+                          <img src="./images/squarespace.png" alt="squarespace" class="img-fluid">
+                        </div>
+                        <!-- Image 5 -->
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 d-flex justify-content-center align-items-center image-column">
+                          <img src="./images/WooCommerce.png" alt="WooCommerce" class="img-fluid">
+                        </div>
+                        <!-- Image 6 -->
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 d-flex justify-content-center align-items-center image-column">
+                          <img src="./images/Wordpress.png" alt="Wordpress" class="img-fluid">
+                        </div>
+                        <!-- Image 7 -->
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 d-flex justify-content-center align-items-center image-column">
+                          <img src="./images/SAP.png" alt="SAP" class="img-fluid">
+                        </div>
+                        <!-- Image 8 -->
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 d-flex justify-content-center align-items-center image-column">
+                          <img src="./images/Shopify.png" alt="Shopify" class="img-fluid">
+                        </div>
+                        <!-- Image 9 -->
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 d-flex justify-content-center align-items-center image-column">
+                          <img src="./images/bigcommerce.png" alt="bigcommerce" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
                     <p class="platform-discription">
                         At ValueCoders, we understand the dynamic nature of the retail and eCommerce industry. With our
                         web and mobile app development expertise, we’re committed to delivering innovative solutions
@@ -1712,7 +1841,7 @@
                             <img src="./images/tick.png" alt="tick" class="platform-img">
                             <p>India’s Top 1% Software Talent</p>
                         </div>
-                        <div class="platform-col">
+                        <div class="platform-col" style="margin-left: 20px !important;">
                             <img src="./images/tick.png" alt="tick" class="platform-img">
                             <p>Trusted by Startups to Fortune 500</p>
                         </div>
@@ -1722,7 +1851,7 @@
                             <img src="./images/tick.png" alt="tick" class="platform-img">
                             <p>Idea to Deployment, We Handle All</p>
                         </div>
-                        <div class="platform-col">
+                        <div class="platform-col" style="margin-left: 20px !important;">
                             <img src="./images/tick.png" alt="tick" class="platform-img">
                             <p>Time-Zone Friendly:Global Presence</p>
                         </div>
@@ -1730,303 +1859,354 @@
                     <div class="platform-row">
                         <div class="platform-col">
                             <img src="./images/tick.png" alt="tick" class="platform-img">
+                            <p>Efficient Process & Workflow Design</p>
+                        </div>
+                        <div class="platform-col" style="margin-left: 20px !important;">
+                            <img src="./images/tick.png" alt="tick" class="platform-img">
+                            <p>Continuous Quality Enhancement</p>
+                        </div>
+                    </div> 
+                    <div class="platform-row">
+                        <div class="platform-col" style=" margin-top: 1px !important;">
+                            <img src="./images/tick.png" alt="tick" class="platform-img">
                             <p>Top-tier Data Security Protocols</p>
                         </div>
-                        <div class="platform-col">
+                        <div class="platform-col" style="margin-left: 20px !important;">
                             <img src="./images/tick.png" alt="tick" class="platform-img">
                             <p>On-time Delivery, No Surprises</p>
                         </div>
                     </div>
 
+
+
+
+
+                    <div class=" mobile ecommerce-row row">
+                        <div class="development-col col-12">
+                            <img src="./images/tick.png" alt="tick" class="development-img">
+                            <p class="development-para">India’s Top 1% Software Talent</p>
+                        </div>
+                        <div class="development-col col-12">
+                            <img src="./images/tick.png" alt="tick" class="development-img">
+                            <p class="development-para">Trusted by Startups to Fortune 500</p>
+                        </div>
+                    </div>
+                    <div class=" mobile development-row row">
+                        <div class="development-col col-12">
+                            <img src="./images/tick.png" alt="tick" class="development-img">
+                            <p class="development-para">Idea to Deployment, We Handle All</p>
+                        </div>
+                        <div class="development-col col-12">
+                            <img src="./images/tick.png" alt="tick" class="development-img">
+                            <p class="development-para">Time-Zone Friendly:Global Presence</p>
+                        </div>
+                    </div>
+
+                    <div class=" mobile development-row row">
+                        <div class="development-col col-12">
+                            <img src="./images/tick.png" alt="tick" class="development-img">
+                            <p class="development-para">Top-tier Data Security Protocols</p>
+                        </div>
+                        <div class="development-col col-12">
+                            <img src="./images/tick.png" alt="tick" class="development-img">
+                            <p class="development-para">On-time Delivery, No Surprises</p>
+                        </div>
+                    </div>
+
+
+
+
+
+
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
+
+
+
     <!-- platform  section end-->
 
     <!-- our case  -->
 
-<!-- 
-    <div class="container our-case-studies">
-        <div class="our-case-head">
-            <h1>Our <span style="color: #2CA068;">Case Studies</span></h1>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col case-studies-col1">
-                <h4>Add online business to your cart for better performance</h4><br>
 
-                <p class="case-studies-para1">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissi
-                    mos sed modi nihil aut Quis
-                    porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed mol stias animi ad quos modi
-                    qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint eum
-                    laudantium.
+    <div class="container casestudies-maindiv">
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <p class="casestudies-para1">
+                    Our <span class="casestudies-span1">Case Studies</span>
                 </p>
-
-                <p class="case-studies-para2">
-                    Est deserunt animi qui pariatur atque non nisi sint eum laudantium. Est deserunt animi qui pariatur
-                    atque non nisi sint eum laudantium! Lorem ipsum dolor sit amet.
-                    Non commodi aliquam qui voluptatem dignissi mos sed.
+                <p class="casestudies-para2" id="case-study-title">
+                    Add online business to your cart for better performance
                 </p>
-
-                <div class="our-case-btn1">
-                    <button type="button">View More<i class="fas fa-arrow-right"></i></button>
+                <div class="col-md-6 casestudies-image_display1">
+                    <img src="./images/online business.png" alt="Image" class=" img-fluid casestudies-image1"
+                        id="case-study-image1">
                 </div>
-            </div>
 
-            <div class="col our-case-img1">
-                <div class="carousel ">
-                    <div>
-                        <img src="./images/online business.png" alt="online business 2" class="carousel-img">
-                    </div>
-                    <div>
-                        <img src="./images/retail_hero.png" alt="online business 2" class="carousel-img">
-                    </div>
-                    <div>
-                        <img src="./images/platform.png" alt="online business 2" class="carousel-img">
+                <div class="row mt-3 casestudies-point_display1">
+                    <div class="col">
+                        <div class="bottom-buttons d-flex justify-content-center">
+                            <button onclick="displayContent(1)" class="active btn btn-sm"></button>
+                            <button onclick="displayContent(2)" class=" activee btn btn-sm"></button>
+                            <button onclick="displayContent(3)" class=" activee btn btn-sm"></button>
+                            <button onclick="displayContent(4)" class=" activee btn btn-sm"></button>
+                        </div>
                     </div>
                 </div>
+                <p class="casestudies-para3" id="content1">
+                    Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis
+                    porro id
+                    suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero
+                    laborum ab
+                    omnis magnam.dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem
+                    ipsum dolor
+                    sit amet.1</p>
+                <p class="casestudies-para3" id="content2" style="display:none;">
+                    Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis
+                    porro id
+                    suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero
+                    laborum ab
+                    omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem
+                    ipsum dolor
+                    sit amet.2
+                </p>
+                <p class="casestudies-para3" id="content3" style="display:none;">
+                    Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis
+                    porro id
+                    suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero
+                    laborum ab
+                    omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem
+                    ipsum dolor
+                    sit amet.3
+                </p>
+                <p class="casestudies-para3" id="content4" style="display:none;">
+                    Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis
+                    porro id
+                    suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero
+                    laborum ab
+                    omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem
+                    ipsum dolor
+                    sit amet.4
+                </p>
+                <div class="casestudies-button_div">
+                    <button type="button" class="casestudies-button  ">View More &rarr;</button>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end" id="casestudies-image2">
+                <img src="./images/online business.png" alt="Image" class="img-fluid"
+                    style="margin-top: 100px !important;" id="case-study-image2">
             </div>
         </div>
-
-        <div class="row container">
-            <div class="col our-case-btn-2">
-                <button onclick="currentSlide(1)" class="active"></button>
-                <button onclick="currentSlide(2)"></button>
-                <button onclick="currentSlide(3)"></button>
+        <div class="row mt-3 casestudies-point_display2">
+            <div class="col">
+                <div class="bottom-buttons1 d-flex justify-content-center">
+                    <button onclick="displayContent(1)" class="active btn btn-sm "></button>
+                    <button onclick="displayContent(2)" class="btn btn-sm bottom_buttons"></button>
+                    <button onclick="displayContent(3)" class="btn btn-sm bottom_buttons"></button>
+                    <button onclick="displayContent(4)" class="btn btn-sm bottom_buttons"></button>
+                </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <script>
-        let currentSlideIndex = 0;
-        const slides = document.querySelectorAll('.carousel-img');
-        const dots = document.querySelectorAll('.our-case-btn-2 button');
-        const contents = [
-            {   // Content for slide 1
-                heading: "Add online business to your cart for better performance",
-                para1: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissi mos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed mol stias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint eum laudantium.",
-                para2: "Est deserunt animi qui pariatur atque non nisi sint eum laudantium. Est deserunt animi qui pariatur atque non nisi sint eum laudantium! Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissi mos sed."
-            },
-            {   // Content for slide 2
-                heading: "Add online business to your cart for better performance2",
-                para1: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissi mos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed mol stias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint eum laudantium.",
-                para2: "Est deserunt animi qui pariatur atque non nisi sint eum laudantium. Est deserunt animi qui pariatur atque non nisi sint eum laudantium! Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissi mos sed."
-            },
-            {   // Content for slide 3
-                heading: "Yet another heading for slide 3",
-                para1: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissi mos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed mol stias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint eum laudantium.",
-                para2: "Est deserunt animi qui pariatur atque non nisi sint eum laudantium. Est deserunt animi qui pariatur atque non nisi sint eum laudantium! Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissi mos sed."
-            }
+        var currentContent = 1;
+
+
+        var caseStudyTitles = [
+            "Add online business to your cart for better performance",
+            "New Case Study Title",
+            "Another Case Study Title",
+            "One More Case Study Title"
+        ];
+        var caseStudyImages = [
+            "./images/online business.png",
+            "./images/online business.png",
+            "./images/online business.png",
+            "./images/online business.png"
         ];
 
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                if (i === index) {
-                    slide.style.display = 'block';
-                    document.querySelector(`.case-studies-col1 h4`).textContent = contents[i].heading;
-                    document.querySelector(`.case-studies-col1 .case-studies-para1`).textContent = contents[i].para1;
-                    document.querySelector(`.case-studies-col1 .case-studies-para2`).textContent = contents[i].para2;
-                } else {
-                    slide.style.display = 'none';
-                }
+        function displayContent(contentNumber) {
+            var contentElements = document.querySelectorAll(".casestudies-para3");
+            contentElements.forEach(function (element) {
+                element.style.display = "none";
             });
 
-            dots.forEach(dot => {
-                dot.classList.remove('active');
+            var content = document.getElementById("content" + contentNumber);
+            content.style.display = "block";
+
+            var buttons1 = document.querySelectorAll(".bottom-buttons button");
+            var buttons2 = document.querySelectorAll(".bottom-buttons1 button");
+
+            buttons1.forEach(function (button) {
+                button.classList.remove("active");
             });
-            dots[index].classList.add('active');
-            currentSlideIndex = index;
+            buttons2.forEach(function (button) {
+                button.classList.remove("active");
+            });
+
+            buttons1[contentNumber - 1].classList.add("active");
+            buttons2[contentNumber - 1].classList.add("active");
+
+            currentContent = contentNumber;
+
+
+            document.getElementById("case-study-title").innerText = caseStudyTitles[contentNumber - 1];
+
+
+            document.getElementById("case-study-image1").src = caseStudyImages[contentNumber - 1];
+            document.getElementById("case-study-image1").alt = "Image " + contentNumber;
+
+            document.getElementById("case-study-image2").src = caseStudyImages[contentNumber - 1];
+            document.getElementById("case-study-image2").alt = "Image " + contentNumber;
         }
 
-        function nextSlide() {
-            currentSlideIndex++;
-            if (currentSlideIndex >= slides.length) {
-                currentSlideIndex = 0;
+        function autoSlideContent() {
+            currentContent++;
+            if (currentContent > 4) {
+                currentContent = 1;
             }
-            showSlide(currentSlideIndex);
+            displayContent(currentContent);
         }
 
-        function previousSlide() {
-            currentSlideIndex--;
-            if (currentSlideIndex < 0) {
-                currentSlideIndex = slides.length - 1;
-            }
-            showSlide(currentSlideIndex);
-        }
 
-        function autoSlide() {
-            nextSlide();
-        }
+        var slideInterval = setInterval(autoSlideContent, 3000);
 
-        let intervalId = setInterval(autoSlide, 2000);
+        var container = document.querySelector('.casestudies-maindiv');
+        var mc = new Hammer(container);
 
-        function stopAutoSlide() {
-            clearInterval(intervalId);
-        }
+        mc.on("swiperight", function () {
 
-        function resumeAutoSlide() {
-            intervalId = setInterval(autoSlide, 2000);
-        }
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                showSlide(index);
-                stopAutoSlide();
-            });
+            displayContent(currentContent - 1);
         });
 
-        document.querySelector('.container').addEventListener('mouseenter', stopAutoSlide);
-        document.querySelector('.container').addEventListener('mouseleave', resumeAutoSlide);
+        mc.on("swipeleft", function () {
 
-        showSlide(currentSlideIndex);
+            displayContent(currentContent + 1);
+        });
     </script>
+
 
     <!-- our case   section end-->
 
     <!-- FAQ  -->
-<!-- 
-    <div class="container">
-        <div class="section13layout">
-            <div class="section13header">
 
-                <h1 class="section13heading">Frequently Asked <span>Questions <img
-                            src="./webdev image/Rectangle 81.png" /></span></h1>
-
+ <div class="container">
+    <div class="section13layout">
+        <div class="section13header">
+            
+                <h1 class="section13heading">Frequently Asked <span>Questions <img src="./webdev image/Rectangle 81.png"/></span></h1>
+            
             </div>
             <div class="container">
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <span>Can’t find any answer for your question?</span>
-                            <button class="accordion-toggle"><i class="arrow down"></i></button>
-                        </div>
-                        <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                            unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio
-                            ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam
-                            aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid
-                            voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <span>Can’t find any answer for your question?</span>
-                            <button class="accordion-toggle"><i class="arrow down"></i></button>
-                        </div>
-                        <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                            unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio
-                            ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam
-                            aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid
-                            voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <span>Can’t find any answer for your question?</span>
-                            <button class="accordion-toggle"><i class="arrow down"></i></button>
-                        </div>
-                        <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                            unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio
-                            ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam
-                            aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid
-                            voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <span>Can’t find any answer for your question?</span>
-                            <button class="accordion-toggle"><i class="arrow down"></i></button>
-                        </div>
-                        <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                            unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio
-                            ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam
-                            aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid
-                            voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <span>Can’t find any answer for your question?</span>
-                            <button class="accordion-toggle"><i class="arrow down"></i></button>
-                        </div>
-                        <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                            unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio
-                            ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam
-                            aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid
-                            voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <span>Can’t find any answer for your question?</span>
-                            <button class="accordion-toggle"><i class="arrow down"></i></button>
-                        </div>
-                        <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                            unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio
-                            ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam
-                            aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid
-                            voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <span>Can’t find any answer for your question?</span>
-                            <button class="accordion-toggle"><i class="arrow down"></i></button>
-                        </div>
-                        <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                            unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio
-                            ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam
-                            aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid
-                            voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
-                    </div>
-                </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Can’t find any answer for your question?</span>
+                   <button class="accordion-toggle"><i class="arrow down"></i></button>
+              </div>
+                  <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Can’t find any answer for your question?</span>
+                   <button class="accordion-toggle"><i class="arrow down"></i></button>
+              </div>
+                  <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Can’t find any answer for your question?</span>
+                   <button class="accordion-toggle"><i class="arrow down"></i></button>
+              </div>
+                <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
             </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span>Can’t find any answer for your question?</span>
+                 <button class="accordion-toggle"><i class="arrow down"></i></button>
+            </div>
+              <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <span>Can’t find any answer for your question?</span>
+               <button class="accordion-toggle"><i class="arrow down"></i></button>
+          </div>
+            <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
         </div>
-    </div> -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>Can’t find any answer for your question?</span>
+             <button class="accordion-toggle"><i class="arrow down"></i></button>
+        </div>
+          <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+      </div>
+      <div class="accordion-item accordion-bottom">
+        <div class="accordion-header">
+          <span>Can’t find any answer for your question?</span>
+           <button class="accordion-toggle"><i class="arrow down"></i></button>
+      </div>
+        <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+    </div>
+          </div>
+        </div>
+  </div>
+  </div>
+  
 
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const accordionHeaders = document.querySelectorAll('.accordion-header');
+        document.addEventListener('DOMContentLoaded', function() {
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
 
-            accordionHeaders.forEach(header => {
-                header.addEventListener('click', function () {
-                    const accordionItem = this.parentElement;
-                    const accordionContent = accordionItem.querySelector('.accordion-content');
-                    const accordionToggle = accordionItem.querySelector('.accordion-toggle').querySelector('.arrow');
+  accordionHeaders.forEach(header => {
+      header.addEventListener('click', function() {
+          const accordionItem = this.parentElement;
+          const accordionContent = accordionItem.querySelector('.accordion-content');
+          const accordionToggle = accordionItem.querySelector('.accordion-toggle').querySelector('.arrow');
 
-                    if (accordionContent.style.display === 'block') {
-                        accordionContent.style.display = 'none';
-                        accordionToggle.classList.remove('up');
-                        accordionToggle.classList.add('down');
-                    } else {
-                        accordionContent.style.display = 'block';
-                        accordionToggle.classList.remove('down');
-                        accordionToggle.classList.add('up');
-                    }
-                });
-            });
-        });
+          if (accordionContent.style.display === 'block') {
+              accordionContent.style.display = 'none';
+              accordionToggle.classList.remove('up');
+              accordionToggle.classList.add('down');
+          } else {
+              accordionContent.style.display = 'block';
+              accordionToggle.classList.remove('down');
+              accordionToggle.classList.add('up');
+          }
+      });
+  });
+});
 
-        // script.js
-        document.addEventListener('DOMContentLoaded', function () {
-            const accordionItems = document.querySelectorAll('.accordion-header');
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+  const accordionItems = document.querySelectorAll('.accordion-header');
 
-            accordionItems.forEach(item => {
-                item.addEventListener('click', function () {
-                    // Toggle active class on the clicked accordion item
-                    this.classList.toggle('active');
+  accordionItems.forEach(item => {
+      item.addEventListener('click', function() {
+          // Toggle active class on the clicked accordion item
+          this.classList.toggle('active');
+          
+          // Toggle arrow color
+          const accordionToggle = this.querySelector('.accordion-toggle').querySelector('.arrow');
+          accordionToggle.classList.toggle('white');
 
-                    // Toggle arrow color
-                    const accordionToggle = this.querySelector('.accordion-toggle').querySelector('.arrow');
-                    accordionToggle.classList.toggle('white');
+          // Toggle text color
+          const accordionHeader = this.querySelector('.accordion-header');
+          accordionHeader.classList.toggle('white');
+      });
+  });
+});
 
-                    // Toggle text color
-                    const accordionHeader = this.querySelector('.accordion-header');
-                    accordionHeader.classList.toggle('white');
-                });
-            });
-        });
+
 
     </script>
 
     <!-- FAQ   section end-->
     <!-- form  -->
-<!--     
+
     <div class="form-background">
         <div class="container">
             <div class="row">
@@ -2043,7 +2223,7 @@
                         <li class="form-point">Quis porro id suscipit quam qui excepturi </li>
                         <li class="form-point">Lorem ipsum dolor sit amet. Non commodi aliquam </li>
                     </ul>
-                    <div class="row profile-name-row align-items-center">
+                    <!-- <div class="row profile-name-row align-items-center">
                         <div class="col-md-auto image">
                             <img src="../About/aboutImages/p1.png" class="formprofile" alt="formprofile">
                         </div>
@@ -2062,10 +2242,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-md-6 form-content2 d-flex justify-content-center align-items-center">
-                    <img src="../About/aboutImages/session11circle.png" class="circleimage">
+                    <img src="./images/session11circle.png" class="circleimage">
                     <div class="form-container">
                         <h3 class="form-text">Send Your <span class="form-touch">Idea's</span></h3>
                         <div class="form-line"></div>
@@ -2094,14 +2274,15 @@
                     </div>
                 </div>
             </div>
-            <img src="../About/aboutImages/dot.png" class="dotimage">
-            <img src="../About/aboutImages/session11arrow.png" class="arrowimage">
+            <!-- <img src="../About/aboutImages/dot.png" class="dotimage"> -->
+            <img src="./images/session11arrow.png" class="arrowimage">
         </div>
-    </div> -->
+    </div>
+
     <!-- end of form  -->
     <!-- Footer -->
 
-<!--     
+
     <footer class="footer">
         <div class="container">
             <div class="row footer-columns justify-content-between">
@@ -2182,8 +2363,16 @@
                 <div class="col-md-auto">
                     <p class="mb-0 footer-text1">Privacy Policy | Terms & Conditions | Sitemap</p>
                 </div>
-                <div class="col-md-auto">
-                    <p class="footer-text2"><span class="copysymbol">&copy;</span><span class="copysymbol_text">2024 All
+                <!-- <div class="col-md-auto d-flex justify-content-center" >
+                    <p class="footer-text2"><span class="copysymbol">&copy;
+                        
+                    </span><span class="copysymbol_text">2024 All
+                            Rights
+                            Reserved - justlogix.com</span></p>
+                </div> -->
+                <div class="col-md-auto " >
+                    <p class="footer-text2"><span class="copysymbol"><img src="./images/copyRight.png"> </span>
+                        <span class="copysymbol_text">2024 All
                             Rights
                             Reserved - justlogix.com</span></p>
                 </div>
@@ -2198,7 +2387,8 @@
             </div>
         </div>
 
-    </footer> -->
+    </footer>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Get all footer columns
